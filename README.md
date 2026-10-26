@@ -11,7 +11,6 @@ quality of the **generated answers**.
 3. `pip install -r requirements.txt`
 4. Optional, NVIDIA GPU only (makes semantic chunking and re-ranking much faster): install the CUDA build of
    PyTorch from https://pytorch.org/get-started/locally/ before step 3, or re-install it afterwards.
-5. Copy `.env.example` to `.env` and paste in `PINECONE_API_KEY` and `GOOGLE_API_KEY`. Never share `.env`.
 6. Run `python list_models.py` to see which Gemini models your key can use; put two different ones in `.env`
    as `GEN_MODEL` and `JUDGE_MODEL` if the defaults in `config.py` are not available.
 7. The `bge` models download automatically from Hugging Face the first time they are used (~1.5 GB total).
