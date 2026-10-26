@@ -1,0 +1,5 @@
+setup,fact_recall,context_recall,correctness,faithfulness
+A,0.791,0.779,4.254,4.746
+B,0.726,0.764,3.881,4.746
+C,0.736,0.731,3.925,4.642
+D,0.75,0.77,3.97,4.418

@@ -1,0 +1,914 @@
+setup,strategy,rerank,q_id,type,wording,found_in_testing,question,reference,answer,fact_recall,context_recall,correctness,faithfulness,sources
+A,fixed,False,1,lookup,filing,False,What were Tesla's total revenues for fiscal year 2023?,"Total revenues were $96,773 million in 2023, up from $81,462 million in 2022.","Tesla's total revenues for fiscal year 2023 were $96,773 million.",1.0,1.0,5,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7
+A,fixed,False,2,lookup_units,filing,False,What were Tesla's total revenues in fiscal 2017?,"Total revenues were $11,758,751 thousand (about $11.76 billion) in 2017.","Tesla's total revenues in fiscal 2017 were $11,758,751,000.",1.0,1.0,5,5,FY2017 Item 8; FY2017 Item 7; FY2017 Item 7; FY2017 Item 7; FY2017 Item 8
+A,fixed,False,3,lookup,filing,False,What was Tesla's net income attributable to common stockholders in fiscal 2024?,"Net income attributable to common stockholders was $7,091 million in 2024, down from $14,997 million in 2023.","Tesla's net income attributable to common stockholders in fiscal 2024 was $7,091 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,4,unanswerable,filing,False,What was Tesla's total revenue for fiscal year 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14) and contains no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 11; FY2025 Item 13; FY2025 Item 11
+A,fixed,False,5,lookup,filing,False,"What was Tesla's net income attributable to common stockholders in 2020, and how did it compare with 2019?","Net income attributable to common stockholders was $721 million in 2020, compared with a net loss of $862 million in 2019.","Tesla's net income attributable to common stockholders in 2020 was $721 million, compared to a net loss of $862 million in 2019.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 5; FY2020 Item 6
+A,fixed,False,6,lookup,filing,False,How many consumer vehicles did Tesla produce and deliver in 2023?,"In 2023 Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.","In 2023, Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7
+A,fixed,False,7,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2021?,"In 2021 Tesla produced 930,422 vehicles and delivered 936,222 vehicles.","Tesla produced 930,422 vehicles and delivered 936,222 vehicles in 2021.",1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
+A,fixed,False,8,lookup,filing,False,How many total vehicles did Tesla deliver and produce in 2019?,"In 2019 Tesla achieved annual delivery and production records of 367,656 and 365,232 total vehicles, respectively.","Tesla delivered 367,656 total vehicles and produced 365,232 total vehicles in 2019.",1.0,1.0,5,5,FY2019 Item 7; FY2019 Item 7; FY2019 Item 1; FY2019 Item 1; FY2019 Item 7
+A,fixed,False,9,lookup,filing,False,"How many Model 3 vehicles did Tesla deliver in 2017, and how many Model S and Model X vehicles?","In 2017 Tesla delivered 101,420 Model S and Model X vehicles and 1,764 Model 3 vehicles.","Tesla delivered 1,764 Model 3 vehicles and 101,420 Model S and Model X vehicles in 2017.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 1; FY2017 Item 7; FY2017 Item 7; FY2017 Item 1A
+A,fixed,False,10,lookup,filing,False,How many full-time employees did Tesla have at the end of 2018?,"As of December 31, 2018, Tesla had 48,817 full-time employees.","As of December 31, 2018, Tesla, Inc. had 48,817 full-time employees.",1.0,1.0,5,5,FY2018 Item 1; FY2018 Item 8; FY2018 Item 1; FY2018 Item 8; FY2018 Item 7
+A,fixed,False,11,lookup,filing,False,"How much did Tesla spend on research and development in 2024, and how did that compare with 2023?","Research and development expense was $4,540 million in 2024 versus $3,969 million in 2023, an increase of $571 million (14%).","Tesla spent $4,540 million on research and development in 2024, which was an increase of $571 million, or 14%, compared to $3,969 million in 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+A,fixed,False,12,lookup,filing,False,"What was revenue from Tesla's energy generation and storage segment in 2024, and how much did it grow?","Energy generation and storage segment revenue was $10,086 million in 2024, up $4,051 million or 67% from $6,035 million in 2023.","Revenue from Tesla's energy generation and storage segment in 2024 was $10.086 billion. It grew by $4.05 billion, or 67%, compared to 2023.",1.0,1.0,4,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,13,lookup,filing,False,"Did Tesla's total automotive revenues increase or decrease in 2024 compared to 2023, and by how much?","Total automotive revenues decreased by $5,349 million (6%), from $82,419 million in 2023 to $77,070 million in 2024.","Tesla's total automotive revenues decreased in 2024 compared to 2023 by $3.134 billion.
+
+This is calculated from the Automotive segment revenues:  
+$87,604 million in 2024 vs. $90,738 million in 2023.  
+$90,738 million - $87,604 million = $3,134 million decrease.",0.0,0.0,2,2,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+A,fixed,False,14,lookup,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2024?,"Tesla ended 2024 with $36.56 billion in cash and cash equivalents and investments, an increase of $7.47 billion from the end of 2023.","To determine the total cash and cash equivalents and investments at the end of 2024, we need to add:
+
+- Cash and cash equivalents: $16,139 million (from the Consolidated Balance Sheets, December 31, 2024)
+- Short-term investments: $20,424 million (from the Consolidated Balance Sheets, December 31, 2024)
+
+Total = $16,139 million + $20,424 million = $36,563 million
+
+Answer: $36,563 million",1.0,0.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,15,lookup,filing,False,"What was the fair market value of Tesla's bitcoin holdings at the end of 2021, and what gains did Tesla realize from selling bitcoin that year?","The fair market value of Tesla's bitcoin holdings as of December 31, 2021 was $1.99 billion; Tesla realized gains of $128 million from selling a portion of its holdings in March 2021.",The fair market value of Tesla's bitcoin holdings at the end of 2021 was $1.99 billion. Tesla realized gains of $128 million from selling a portion of its bitcoin holdings in March 2021.,1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 8
+A,fixed,False,16,multi_year,filing,False,How did Tesla's total revenues change between fiscal 2019 and fiscal 2023?,"Total revenues grew from $24,578 million in 2019 to $96,773 million in 2023, roughly a fourfold increase.","Tesla's total revenues increased from $24,578 million in fiscal 2019 to $96,773 million in fiscal 2023. This represents an increase of $72,195 million over the period.",1.0,1.0,5,5,FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 7; FY2019 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8
+A,fixed,False,17,multi_year,filing,False,"What was Tesla's net income attributable to common stockholders in each of 2022, 2023 and 2024?","Net income attributable to common stockholders was $12,556 million in 2022, $14,997 million in 2023 and $7,091 million in 2024.","Tesla's net income attributable to common stockholders was:
+- $12,556 million in 2022
+- $14,997 million in 2023
+- $7,091 million in 2024",1.0,1.0,5,5,FY2022 Item 8; FY2022 Item 8; FY2022 Item 5; FY2022 Item 8; FY2022 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,18,lookup_units,filing,False,"What fees did PricewaterhouseCoopers bill Tesla in 2025, in total and for audit fees?","PwC billed total fees of $18,070 thousand in 2025, including audit fees of $16,485 thousand (2024: total $17,923 thousand, audit $15,634 thousand).","In 2025, PricewaterhouseCoopers billed Tesla a total of $18,070,000, of which $16,485,000 were audit fees.",1.0,1.0,5,5,FY2025 Item 14; FY2025 Item 14; FY2025 Item 14; FY2025 Item 13; FY2025 Item 13
+A,fixed,False,19,narrative,filing,False,What are the stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K?,"Tesla's incident response and breach management process has four stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication and recovery, and 4) post-incident analysis.","The stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K are:  
+1) Preparation for a cybersecurity incident,  
+2) Detection and analysis of a security incident,  
+3) Containment, eradication and recovery, and  
+4) Post-incident analysis.",1.0,1.0,5,5,FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 1C
+A,fixed,False,20,narrative,filing,False,"According to Tesla's fiscal 2024 risk factors, which individual is Tesla highly dependent on, and what are his roles?","Tesla states it is highly dependent on the services of Elon Musk, Technoking of Tesla and its Chief Executive Officer.","Tesla is highly dependent on Elon Musk, who serves as Technoking of Tesla and Chief Executive Officer.",1.0,1.0,5,5,FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1A; FY2024 Item 1A
+A,fixed,False,21,narrative,filing,False,When did Tesla complete its acquisition of SolarCity?,"Tesla's acquisition of SolarCity Corporation closed on November 21, 2016.","Tesla completed its acquisition of SolarCity on November 21, 2016.",1.0,1.0,5,5,FY2016 Item 7; FY2016 Item 8; FY2016 Item 8; FY2016 Item 8; FY2016 Item 6
+A,fixed,False,22,narrative,filing,False,What did Tesla and Elon Musk agree to in the 2018 SEC settlement over his statement about taking Tesla private?,"Tesla and Mr. Musk each paid a civil penalty of $20 million; an independent director was appointed Chair of the Board (to serve for at least three years), two additional independent directors were appointed, and Tesla enhanced its disclosure controls and other corporate governance matters.","In the 2018 SEC settlement over Elon Musk's statement about taking Tesla private, Tesla and Elon Musk each paid a civil penalty of $20 million. Tesla agreed to appoint an independent director as Chair of the Board for at least three years, appoint two additional independent directors to the Board, and make further enhancements to its existing disclosure controls and procedures. Elon Musk did not admit or deny the SEC’s allegations, and there was no restriction on his ability to serve as an officer or director on the Board, other than as its Chair.",1.0,1.0,5,5,FY2018 Item 8; FY2018 Item 8; FY2018 Item 8; FY2018 Item 1A; FY2018 Item 8
+A,fixed,False,23,narrative,filing,False,"According to the fiscal 2017 risk factors, who is Tesla's manufacturing partner and supplier for lithium-ion cells, and at which factory?","Tesla signed long-term agreements with Panasonic to be its manufacturing partner and supplier for lithium-ion cells at Gigafactory 1 in Nevada (and for PV cells and panels at Gigafactory 2 in Buffalo, New York).","According to the fiscal 2017 risk factors, Tesla's manufacturing partner and supplier for lithium-ion cells is Panasonic, and the factory is Gigafactory 1.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 7; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 1
+A,fixed,False,24,narrative,filing,False,"Which board committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and how often does it receive updates?","The Audit Committee is responsible for oversight of risks from cybersecurity threats, and its members receive updates on a quarterly basis from senior management.","The Audit Committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and it receives updates on a quarterly basis.",1.0,1.0,5,5,FY2024 Item 1C; FY2024 Item 1C; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1C
+A,fixed,False,25,narrative,filing,False,What is Tesla's dividend policy as described in its fiscal 2024 10-K?,Tesla has never declared or paid cash dividends on its common stock and does not anticipate paying any cash dividends in the foreseeable future.,"Tesla's dividend policy, as described in its fiscal 2024 10-K, is that the company has never declared or paid cash dividends on its common stock and currently does not anticipate paying any cash dividends in the foreseeable future. Any future determination to declare cash dividends will be made at the discretion of the board of directors, subject to applicable laws, and will depend on Tesla's financial condition, results of operations, capital requirements, general business conditions, and other factors deemed relevant by the board.",1.0,1.0,5,5,FY2024 Item 5; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,26,narrative,filing,False,"What did the Delaware Court of Chancery decide about Elon Musk's 2018 CEO Performance Award, and when, according to the fiscal 2024 10-K?","On January 30, 2024, the Court issued an opinion finding that the 2018 CEO Performance Award should be rescinded.","The Delaware Court of Chancery issued an opinion on January 30, 2024, finding that Elon Musk's 2018 CEO Performance Award should be rescinded. On December 2, 2024, the Court denied the motion to revise this opinion and awarded Plaintiff’s counsel fees in the amount of $345 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,27,narrative,filing,False,"What groundwork for future growth did Tesla lay in 2019, according to its fiscal 2019 10-K?","Tesla commenced Model 3 production at Gigafactory Shanghai, prepared the Fremont Factory for Model Y production (which commenced in the first quarter of 2020), selected Berlin, Germany as the site of its next factory for Europe, and unveiled Cybertruck.","According to Tesla's fiscal 2019 10-K, the groundwork for future growth in 2019 included capital expenditures primarily for Gigafactory Shanghai construction, Model 3 production, and Model Y preparations. Additionally, Tesla expanded its factories, advanced the manufacturing ramps for its products, and continued development of its pipeline of projects. The company also pursued infrastructure growth and maintained its strategy of using a partner to manufacture battery cells. Tesla expected its average annual capital expenditures in 2020 and the following two fiscal years to be between $2.5 billion and $3.5 billion, indicating ongoing investment in future growth.",0.5,0.5,2,5,FY2019 Item 7; FY2019 Item 7; FY2019 Item 7; FY2019 Item 7; FY2019 Item 8
+A,fixed,False,28,narrative,filing,False,Which vehicle models were in active production at Gigafactory Texas according to the fiscal 2023 10-K?,Gigafactory Texas had Model Y and Cybertruck in active production.,"According to the fiscal 2023 10-K, the vehicle models in active production at Gigafactory Texas were Model Y and Cybertruck.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7
+A,fixed,False,29,lookup,filing,False,"How many Tesla shares did Elon Musk beneficially own according to the fiscal 2025 10-K/A, and what percentage was that?","Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","Elon Musk beneficially owned 717,112,739 Tesla shares, which represented 20.3% of the outstanding shares, according to the fiscal 2025 10-K/A.",1.0,1.0,5,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 11; FY2025 Item 12
+A,fixed,False,30,narrative,filing,False,"According to the related person transactions in the fiscal 2025 10-K/A, what happened to xAI Holdings in February 2026?","On February 2, 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX.","In February 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX pursuant to a merger transaction.",0.5,1.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 10; FY2025 Item 11
+A,fixed,False,31,narrative,filing,False,When did Tesla start production at Gigafactory Berlin-Brandenburg?,Tesla started production at Gigafactory Berlin-Brandenburg close to the end of the first quarter of 2022.,Tesla started production at Gigafactory Berlin-Brandenburg closer to the end of the first quarter of 2022.,1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 2; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+A,fixed,False,32,multi_year,filing,False,How did Tesla's number of full-time employees change from the end of 2017 to the end of 2019?,"Tesla had 37,543 full-time employees at the end of 2017 and 48,016 at the end of 2019.","As of December 31, 2017, Tesla had 37,543 full-time employees. As of December 31, 2019, Tesla had 48,016 full-time employees. 
+
+The number of full-time employees increased by 10,473 from the end of 2017 to the end of 2019.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 8; FY2017 Item 8; FY2017 Item 7; FY2017 Item 1A; FY2019 Item 1; FY2019 Item 1A; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7
+A,fixed,False,33,multi_year,filing,False,How did Tesla's worldwide employee count change between the end of 2020 and the end of 2024?,"Tesla's worldwide full-time employee count was 70,757 at the end of 2020 and its worldwide headcount was 125,665 at the end of 2024.","As of December 31, 2020, Tesla's worldwide employee count was 70,757. As of December 31, 2024, Tesla's worldwide employee count was 125,665. 
+
+The change in employee count between the end of 2020 and the end of 2024 is an increase of 54,908 employees.",1.0,1.0,5,2,FY2020 Item 1; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8; FY2020 Item 7; FY2024 Item 1; FY2024 Item 1; FY2024 Item 8; FY2024 Item 1; FY2024 Item 1
+A,fixed,False,34,multi_year,filing,False,"What was Tesla's worldwide headcount at the end of 2022, 2023 and 2024, and in which of those years did it fall?","Headcount was 127,855 at the end of 2022, 140,473 at the end of 2023 and 125,665 at the end of 2024, so it fell in 2024.",The provided filings do not contain this information.,0.0,0.6666666666666666,1,1,FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 7; FY2022 Item 7; FY2023 Item 1; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2024 Item 1; FY2024 Item 8; FY2024 Item 8; FY2024 Item 1; FY2024 Item 8
+A,fixed,False,35,multi_year,filing,False,How many vehicles did Tesla deliver in 2020 compared with 2023?,"Tesla delivered 499,647 vehicles in 2020 and 1,808,581 consumer vehicles in 2023.","In 2020, Tesla delivered 499,647 vehicles. In 2023, Tesla delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2020 Item 7; FY2020 Item 1; FY2020 Item 7; FY2020 Item 7; FY2020 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 7
+A,fixed,False,36,multi_year,filing,False,How did Tesla's vehicle production change from 2021 to 2022?,"Tesla produced 930,422 vehicles in 2021 and 1,369,611 consumer vehicles in 2022.",The provided filings do not contain this information.,0.0,0.5,1,1,FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+A,fixed,False,37,multi_year,filing,False,How much did Tesla spend on research and development in 2016 compared with 2024?,"R&D expense was $834,408 thousand (about $834 million) in 2016 and $4,540 million in 2024.","In 2016, Tesla spent $834.4 million on research and development, as stated in the FY2016 10-K under Operating Expenses in the Consolidated Statements of Operations.
+
+In 2024, Tesla spent $4,540 million ($4.54 billion) on research and development, as stated in the FY2024 10-K under Research and Development expenses.
+
+Therefore, Tesla spent $834.4 million on research and development in 2016 and $4,540 million in 2024.",1.0,1.0,5,5,FY2016 Item 7; FY2016 Item 7; FY2016 Item 8; FY2016 Item 7; FY2016 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+A,fixed,False,38,multi_year,filing,False,How did revenue from Tesla's energy generation and storage segment change from 2022 to 2024?,"Energy generation and storage segment revenue grew from $3,909 million in 2022 to $10,086 million in 2024.","From 2022 to 2024, revenue from Tesla's energy generation and storage segment increased from $3,909 million to $10,086 million. This represents an increase of $6,177 million over the two-year period. 
+
+In 2024, the revenue was $10,086 million, up from $6,035 million in 2023, which was itself an increase from $3,909 million in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7; FY2022 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,39,multi_year,filing,False,How did Tesla's total revenues change from fiscal 2017 to fiscal 2018?,"Total revenues grew from $11,758,751 thousand (about $11.76 billion) in 2017 to $21,461,268 thousand (about $21.46 billion) in 2018.","Tesla's total revenues increased from $11,758,751 thousand in fiscal 2017 to $21,461,268 thousand in fiscal 2018. This represents an increase of $9,702,517 thousand, or 82%.",1.0,1.0,5,2,FY2017 Item 8; FY2017 Item 7; FY2017 Item 7; FY2017 Item 8; FY2017 Item 7; FY2018 Item 8; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7
+A,fixed,False,40,multi_year,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2023 compared with the end of 2024?,Tesla had $29.09 billion at the end of 2023 and $36.56 billion at the end of 2024.,"At the end of 2023, Tesla had $29.09 billion in cash and cash equivalents and investments.  
+At the end of 2024, Tesla had $36.56 billion in cash and cash equivalents and investments.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+A,fixed,False,41,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2018?,"In 2018 Tesla produced 254,530 vehicles and delivered 245,506 vehicles.","Tesla produced 254,530 vehicles and delivered 245,506 vehicles in 2018.",1.0,1.0,5,5,FY2018 Item 7; FY2018 Item 7; FY2018 Item 1; FY2018 Item 1; FY2018 Item 1A
+A,fixed,False,42,lookup,filing,False,How much bitcoin did Tesla purchase in 2021?,During 2021 Tesla purchased an aggregate of $1.50 billion in bitcoin.,Tesla purchased an aggregate of $1.50 billion in bitcoin in 2021.,1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 8; FY2021 Item 8; FY2021 Item 8; FY2021 Item 7
+A,fixed,False,43,lookup,filing,False,How many full-time employees did Tesla and SolarCity each have at the end of 2016?,"As of December 31, 2016, Tesla had 17,782 full-time employees and SolarCity Corporation had 12,243.","Tesla, Inc. had 17,782 full-time employees and SolarCity Corporation had 12,243 full-time employees as of December 31, 2016.",1.0,1.0,5,5,FY2016 Item 8; FY2016 Item 1; FY2016 Item 7; FY2016 Item 2; FY2016 Item 8
+A,fixed,False,44,unanswerable,filing,False,How many vehicles did Tesla deliver in 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14).,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11
+A,fixed,False,45,unanswerable,filing,False,What was Tesla's gross margin in fiscal 2025?,The provided filings do not contain this information: the FY2025 10-K/A in the corpus has no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 11; FY2025 Item 13; FY2025 Item 11
+A,fixed,False,46,lookup,casual,True,how many cars did tesla sell in 2024?,"Tesla delivered approximately 1,789,000 consumer vehicles in 2024 (and produced approximately 1,773,000).",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+A,fixed,False,47,lookup,casual,False,how many people worked at tesla at the end of 2024?,"Tesla's worldwide employee headcount was 125,665 as of December 31, 2024.","As of December 31, 2024, Tesla's employee headcount worldwide was 125,665.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+A,fixed,False,48,lookup,casual,False,did tesla make money in 2020?,"Yes. Net income attributable to common stockholders was $721 million in 2020, after a net loss of $862 million in 2019.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 8
+A,fixed,False,49,lookup,casual,False,how much money did tesla bring in in 2022?,"Tesla's total revenues were $81,462 million (about $81.5 billion) in 2022.","Tesla brought in $81,462 million in total revenues in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 8; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+A,fixed,False,50,lookup,casual,False,how big was tesla's battery and solar business in 2024?,"The energy generation and storage segment had revenue of $10,086 million in 2024, up 67% from $6,035 million in 2023.","Tesla's energy generation and storage segment, which includes battery and solar products, had a revenue increase of $4.05 billion, or 67%, in the year ended December 31, 2024, compared to 2023. This growth was primarily due to a 16.7 GWh increase in Megapack and Powerwall deployments compared to the prior year. In 2024, Tesla deployed 31.4 GWh of energy storage products. The provided filings do not specify the exact total revenue figure for the energy generation and storage segment in 2024.",0.0,0.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,51,lookup,casual,False,how much cash did tesla have sitting around at the end of 2023?,Tesla ended 2023 with $29.09 billion in cash and cash equivalents and investments.,"Tesla had $16,398 million in cash and cash equivalents at the end of 2023.",0.0,1.0,2,5,FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8
+A,fixed,False,52,lookup,casual,False,how many cars did tesla make in 2023?,"Tesla produced 1,845,985 consumer vehicles in 2023.","Tesla produced 1,845,985 consumer vehicles in 2023.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8
+A,fixed,False,53,lookup,casual,False,how much did tesla spend on r&d in 2022?,"Research and development expense was $3,075 million in 2022, up 19% from $2,593 million in 2021.","Tesla spent $3,075 million on research and development in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7
+A,fixed,False,54,lookup,casual,False,how much of tesla does elon own?,"According to the fiscal 2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 13; FY2025 Item 10
+A,fixed,False,55,narrative,casual,False,did tesla get fined by the sec over musk saying he'd take tesla private?,"Yes. Under the 2018 SEC settlement, Tesla and Elon Musk each paid a civil penalty of $20 million, and an independent director was appointed Chair of the Board.","Yes, Tesla was fined by the SEC. In connection with Elon Musk’s statement about considering taking Tesla private, Tesla paid a civil penalty of $20 million as part of a settlement approved by the U.S. District Court for the Southern District of New York on October 16, 2018. This is disclosed in the FY2018 10-K filing.",1.0,1.0,5,5,FY2018 Item 8; FY2018 Item 8; FY2018 Item 8; FY2018 Item 1A; FY2018 Item 8
+A,fixed,False,56,definition,casual,True,what does tesla mean by cash deliveries?,"Cash deliveries are deliveries of new vehicles sold for cash or with financing, i.e. vehicles that are not subject to lease accounting; their revenue is recorded as automotive sales revenue rather than automotive leasing revenue.",The provided filings do not contain this information.,0.0,0.5,1,5,FY2024 Item 8; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1
+A,fixed,False,57,definition,casual,False,what are tesla's regulatory credits and who buys them?,Automotive regulatory credits revenue comes from selling regulatory credits to other automotive manufacturers; it is directly related to Tesla's new vehicle production and sales.,"Tesla earns tradable regulatory credits under various regulations related to zero-emission vehicles (ZEVs), greenhouse gas, fuel economy, and clean fuel. These credits are sold to other regulated entities who use them to comply with emission standards and other regulatory requirements.",0.0,0.0,4,5,FY2024 Item 1; FY2024 Item 8; FY2024 Item 8; FY2024 Item 1A; FY2024 Item 8
+A,fixed,False,58,definition,casual,False,what counts as automotive leasing revenue for tesla?,"Automotive leasing revenue includes the amortization of revenue for vehicles under direct operating lease agreements, plus direct sales-type leasing programs where all revenue is recognized upon delivery to the customer.","Automotive leasing revenue for Tesla includes:
+
+1. The amortization of revenue for vehicles under direct operating lease agreements, recorded on a straight-line basis over the contractual term.
+2. Direct sales-type leasing programs, where all revenue associated with the sales-type lease is recognized upon delivery to the customer.
+3. Interest income from sales-type leases, recorded over time based on the implicit rate in the lease as customers are invoiced monthly.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+A,fixed,False,59,definition,casual,False,what's included in tesla's services and other revenue?,"Services and other revenue consists of sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue and retail merchandise sales.","Tesla's Services and Other revenue includes sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue, and retail merchandise sales. Revenues related to repair, maintenance, and vehicle insurance services are recognized over time as services are provided, and extended service plans are recognized over the performance period of the service contract.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 1; FY2024 Item 8; FY2024 Item 8; FY2024 Item 1
+A,fixed,False,60,definition,casual,False,what does tesla make at its buffalo factory?,"According to the fiscal 2017 10-K, Gigafactory 2 in Buffalo, New York produces PV (solar) cells and panels, with Panasonic as manufacturing partner and supplier.","Tesla manufactures solar products at its factory in Buffalo, New York (Gigafactory 2).",0.5,0.5,4,5,FY2017 Item 1; FY2017 Item 1; FY2017 Item 1A; FY2017 Item 7; FY2017 Item 7
+A,fixed,False,61,definition,casual,False,how does tesla deal with hackers and cyber attacks?,"Per the fiscal 2023 10-K, Tesla runs privacy and cybersecurity reviews, penetration testing with external tools, a bug bounty program and employee training, and has a four-stage incident response process: preparation, detection and analysis, containment/eradication/recovery, and post-incident analysis.","Tesla deals with hackers and cyber attacks through a multi-layered approach that includes proactive privacy and cybersecurity reviews of systems and applications, auditing data policies, conducting penetration testing using external third-party tools and techniques, operating a bug bounty program to encourage proactive vulnerability reporting, and providing employee training. To detect and respond to cybersecurity incidents, Tesla has implemented an incident response and breach management process with four stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication, and recovery, and 4) post-incident analysis. These efforts are overseen by leaders from Information Security, Product Security, Compliance, and Legal teams. Tesla also conducts tabletop exercises to simulate incident responses and collaborates with technical and business stakeholders to develop detection, mitigation, and remediation strategies. Security events and data incidents are evaluated, ranked by severity, and prioritized for response based on materiality, operational impact, and privacy impact (FY2023 10-K | Item 1C).",1.0,1.0,5,5,FY2023 Item 1C; FY2023 Item 3; FY2023 Item 8; FY2023 Item 1C; FY2023 Item 1C
+A,fixed,False,62,reasoning,casual,True,did tesla make a profit in 2024 after capex?,"Yes. Net income attributable to common stockholders was $7,091 million in 2024, and operating cash flow of $14.92 billion exceeded capital expenditures of $11.34 billion, leaving about $3.58 billion of free cash flow.","To determine if Tesla made a profit in 2024 after capital expenditures (capex), we compare operating cash flow (cash generated from operations) to capex.
+
+From the excerpts:
+- Cash flows provided by operating activities in 2024: $14.92 billion
+- Capital expenditures in 2024: $11.34 billion
+
+Operating cash flow exceeds capex by $3.58 billion ($14.92 billion - $11.34 billion), meaning Tesla generated positive free cash flow in 2024.
+
+Additionally, Tesla's net income for 2024 was $7,153 million ($7.153 billion), which is a profit before capex. Capex is not subtracted from net income to calculate net income, but the company's ability to generate more cash from operations than it spent on capex confirms it was profitable after accounting for reinvestment.
+
+Answer: Yes, Tesla made a profit in 2024 after capex, with $14.92 billion in operating cash flow and $11.34 billion in capital expenditures, resulting in positive free cash flow.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+A,fixed,False,63,reasoning,casual,False,why did tesla's car sales revenue drop in 2024?,"Automotive sales revenue fell $6.03 billion (8%), primarily due to lower average selling prices driven by overall price reductions and attractive financing options, plus about 22,000 fewer combined Model 3 and Model Y cash deliveries; this was partly offset by about 19,000 more deliveries of other models (mainly Cybertruck).","Tesla's automotive sales revenue decreased in 2024 primarily due to lower average selling prices on its vehicles, driven by overall price reductions and attractive financing options provided in 2024, as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. These decreases were partially offset by an increase of approximately 19,000 deliveries of other models, primarily due to the production ramp of Cybertruck, and the recognition of $596 million of FSD (Supervised) revenue from the release of certain features in 2024.",1.0,1.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+A,fixed,False,64,reasoning,casual,False,is tesla's energy business growing faster than its car business?,"Yes, in 2024: energy generation and storage segment revenue grew 67%, while total automotive revenues fell 6% (from $82,419 million to $77,070 million).",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 1; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1
+A,fixed,False,65,reasoning,casual,False,was 2024 a better or worse year than 2023 for tesla's profits?,"Worse: net income attributable to common stockholders fell from $14,997 million in 2023 to $7,091 million in 2024, roughly halving.","2024 was a worse year than 2023 for Tesla's profits.
+
+In 2024, Tesla's net income attributable to common stockholders was $7.09 billion, representing a decrease of $7.91 billion compared to the prior year. This indicates that profits were significantly lower in 2024 than in 2023. Additionally, gross profit for the total automotive and services and other segment decreased from $16,519 million in 2023 to $14,810 million in 2024, and the gross margin declined from 18.2% to 16.9%. These figures confirm that 2024 was a worse year for Tesla's profitability compared to 2023.",0.5,0.5,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+A,fixed,False,66,reasoning,casual,False,did tesla hire more people or cut jobs in 2024?,"Tesla's worldwide headcount fell from 140,473 at the end of 2023 to 125,665 at the end of 2024.","Tesla cut jobs in 2024. The worldwide employee headcount decreased from 140,473 as of December 31, 2023, to 125,665 as of December 31, 2024.",1.0,1.0,5,5,FY2023 Item 1; FY2023 Item 1; FY2023 Item 1A; FY2023 Item 1; FY2023 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+A,fixed,False,67,multi_year,casual,False,how much did tesla's car deliveries grow from 2018 to 2021?,"Deliveries grew from 245,506 vehicles in 2018 to 936,222 in 2021, almost a fourfold increase.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
+B,fixed,True,1,lookup,filing,False,What were Tesla's total revenues for fiscal year 2023?,"Total revenues were $96,773 million in 2023, up from $81,462 million in 2022.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7
+B,fixed,True,2,lookup_units,filing,False,What were Tesla's total revenues in fiscal 2017?,"Total revenues were $11,758,751 thousand (about $11.76 billion) in 2017.","Tesla's total revenues in fiscal 2017 were $11,758,751,000.",1.0,1.0,5,5,FY2017 Item 8; FY2017 Item 8; FY2017 Item 7; FY2017 Item 8; FY2017 Item 7
+B,fixed,True,3,lookup,filing,False,What was Tesla's net income attributable to common stockholders in fiscal 2024?,"Net income attributable to common stockholders was $7,091 million in 2024, down from $14,997 million in 2023.","Tesla's net income attributable to common stockholders in fiscal 2024 was $7,091 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+B,fixed,True,4,unanswerable,filing,False,What was Tesla's total revenue for fiscal year 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14) and contains no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 11; FY2025 Item 13; FY2025 Item 11; FY2025 Item 13
+B,fixed,True,5,lookup,filing,False,"What was Tesla's net income attributable to common stockholders in 2020, and how did it compare with 2019?","Net income attributable to common stockholders was $721 million in 2020, compared with a net loss of $862 million in 2019.","Tesla's net income attributable to common stockholders in 2020 was $721 million, compared to a net loss attributable to common stockholders of $862 million in 2019.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 6; FY2020 Item 8
+B,fixed,True,6,lookup,filing,False,How many consumer vehicles did Tesla produce and deliver in 2023?,"In 2023 Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.","Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles in 2023.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 1; FY2023 Item 1; FY2023 Item 7; FY2023 Item 1
+B,fixed,True,7,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2021?,"In 2021 Tesla produced 930,422 vehicles and delivered 936,222 vehicles.","Tesla produced 930,422 vehicles and delivered 936,222 vehicles in 2021.",1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 8; FY2021 Item 1
+B,fixed,True,8,lookup,filing,False,How many total vehicles did Tesla deliver and produce in 2019?,"In 2019 Tesla achieved annual delivery and production records of 367,656 and 365,232 total vehicles, respectively.","Tesla delivered 367,656 total vehicles and produced 365,232 total vehicles in 2019.",1.0,1.0,5,5,FY2019 Item 7; FY2019 Item 1; FY2019 Item 8; FY2019 Item 7; FY2019 Item 7
+B,fixed,True,9,lookup,filing,False,"How many Model 3 vehicles did Tesla deliver in 2017, and how many Model S and Model X vehicles?","In 2017 Tesla delivered 101,420 Model S and Model X vehicles and 1,764 Model 3 vehicles.","Tesla delivered 1,764 Model 3 vehicles in 2017. Additionally, Tesla delivered 101,420 Model S and Model X vehicles in 2017.",1.0,1.0,5,5,FY2017 Item 7; FY2017 Item 7; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 1
+B,fixed,True,10,lookup,filing,False,How many full-time employees did Tesla have at the end of 2018?,"As of December 31, 2018, Tesla had 48,817 full-time employees.","As of December 31, 2018, Tesla, Inc. had 48,817 full-time employees.",1.0,1.0,5,5,FY2018 Item 1; FY2018 Item 8; FY2018 Item 8; FY2018 Item 7; FY2018 Item 8
+B,fixed,True,11,lookup,filing,False,"How much did Tesla spend on research and development in 2024, and how did that compare with 2023?","Research and development expense was $4,540 million in 2024 versus $3,969 million in 2023, an increase of $571 million (14%).","Tesla spent $4,540 million on research and development in 2024, which represents an increase of $571 million, or 14%, compared to $3,969 million in 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,12,lookup,filing,False,"What was revenue from Tesla's energy generation and storage segment in 2024, and how much did it grow?","Energy generation and storage segment revenue was $10,086 million in 2024, up $4,051 million or 67% from $6,035 million in 2023.","Revenue from Tesla's energy generation and storage segment in 2024 was $10.086 billion. It grew by $4.05 billion, or 67%, compared to 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,13,lookup,filing,False,"Did Tesla's total automotive revenues increase or decrease in 2024 compared to 2023, and by how much?","Total automotive revenues decreased by $5,349 million (6%), from $82,419 million in 2023 to $77,070 million in 2024.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,14,lookup,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2024?,"Tesla ended 2024 with $36.56 billion in cash and cash equivalents and investments, an increase of $7.47 billion from the end of 2023.",Tesla had $36.56 billion in cash and cash equivalents and investments at the end of 2024.,1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+B,fixed,True,15,lookup,filing,False,"What was the fair market value of Tesla's bitcoin holdings at the end of 2021, and what gains did Tesla realize from selling bitcoin that year?","The fair market value of Tesla's bitcoin holdings as of December 31, 2021 was $1.99 billion; Tesla realized gains of $128 million from selling a portion of its holdings in March 2021.",The fair market value of Tesla's bitcoin holdings at the end of 2021 was $1.99 billion. Tesla realized gains of $128 million from selling a portion of its bitcoin holdings in March 2021.,1.0,1.0,5,5,FY2021 Item 8; FY2021 Item 7; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7
+B,fixed,True,16,multi_year,filing,False,How did Tesla's total revenues change between fiscal 2019 and fiscal 2023?,"Total revenues grew from $24,578 million in 2019 to $96,773 million in 2023, roughly a fourfold increase.","To determine how Tesla's total revenues changed between fiscal 2019 and fiscal 2023, we refer to the Consolidated Statements of Operations in the provided excerpts.
+
+From the FY2019 10-K (Item 8):
+- Total revenues for the year ended December 31, 2019: $24,578 million
+
+From the FY2023 10-K (Item 8):
+- Total revenues for the year ended December 31, 2023: 
+  - Automotive sales: $78,509 million
+  - Automotive regulatory credits: $1,790 million
+  - Automotive leasing: $2,120 million
+  - Total revenues = $78,509 + $1,790 + $2,120 = $82,419 million
+
+Change in total revenues:
+$82,419 million (2023) - $24,578 million (2019) = $57,841 million increase
+
+Tesla's total revenues increased by $57,841 million from fiscal 2019 to fiscal 2023.",0.5,0.5,1,2,FY2019 Item 7; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8
+B,fixed,True,17,multi_year,filing,False,"What was Tesla's net income attributable to common stockholders in each of 2022, 2023 and 2024?","Net income attributable to common stockholders was $12,556 million in 2022, $14,997 million in 2023 and $7,091 million in 2024.","Tesla's net income attributable to common stockholders was:
+- $12,556 million in 2022
+- $14,997 million in 2023
+- $7,091 million in 2024",1.0,1.0,5,5,FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 5; FY2022 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+B,fixed,True,18,lookup_units,filing,False,"What fees did PricewaterhouseCoopers bill Tesla in 2025, in total and for audit fees?","PwC billed total fees of $18,070 thousand in 2025, including audit fees of $16,485 thousand (2024: total $17,923 thousand, audit $15,634 thousand).","In 2025, PricewaterhouseCoopers billed Tesla a total of $18,070,000, of which $16,485,000 were audit fees.",1.0,1.0,5,5,FY2025 Item 14; FY2025 Item 14; FY2025 Item 14; FY2025 Item 13; FY2025 Item 13
+B,fixed,True,19,narrative,filing,False,What are the stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K?,"Tesla's incident response and breach management process has four stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication and recovery, and 4) post-incident analysis.","The stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K are:  
+1) Preparation for a cybersecurity incident,  
+2) Detection and analysis of a security incident,  
+3) Containment, eradication and recovery, and  
+4) Post-incident analysis.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 7
+B,fixed,True,20,narrative,filing,False,"According to Tesla's fiscal 2024 risk factors, which individual is Tesla highly dependent on, and what are his roles?","Tesla states it is highly dependent on the services of Elon Musk, Technoking of Tesla and its Chief Executive Officer.","According to Tesla's fiscal 2024 risk factors, Tesla is highly dependent on Elon Musk, who serves as Technoking of Tesla and Chief Executive Officer.",1.0,1.0,5,5,FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A
+B,fixed,True,21,narrative,filing,False,When did Tesla complete its acquisition of SolarCity?,"Tesla's acquisition of SolarCity Corporation closed on November 21, 2016.","Tesla completed its acquisition of SolarCity on November 21, 2016.",1.0,1.0,5,5,FY2016 Item 8; FY2016 Item 9A; FY2016 Item 8; FY2016 Item 8; FY2016 Item 7
+B,fixed,True,22,narrative,filing,False,What did Tesla and Elon Musk agree to in the 2018 SEC settlement over his statement about taking Tesla private?,"Tesla and Mr. Musk each paid a civil penalty of $20 million; an independent director was appointed Chair of the Board (to serve for at least three years), two additional independent directors were appointed, and Tesla enhanced its disclosure controls and other corporate governance matters.","In the 2018 SEC settlement over Elon Musk's statement about taking Tesla private, Tesla and Elon Musk each paid civil penalties of $20 million. Tesla agreed to appoint an independent director as Chair of the Board for at least three years and appointed two additional independent directors to the Board. Tesla also made further enhancements to its controls and procedures. Musk did not admit or deny the SEC’s allegations, and there was no restriction on his ability to serve as an officer or director on the Board, other than as its Chair.",1.0,1.0,4,4,FY2018 Item 8; FY2018 Item 8; FY2018 Item 7; FY2018 Item 7; FY2018 Item 1A
+B,fixed,True,23,narrative,filing,False,"According to the fiscal 2017 risk factors, who is Tesla's manufacturing partner and supplier for lithium-ion cells, and at which factory?","Tesla signed long-term agreements with Panasonic to be its manufacturing partner and supplier for lithium-ion cells at Gigafactory 1 in Nevada (and for PV cells and panels at Gigafactory 2 in Buffalo, New York).","According to the fiscal 2017 risk factors, Tesla's manufacturing partner and supplier for lithium-ion cells is Panasonic, and this partnership is at Gigafactory 1 in Nevada.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 7
+B,fixed,True,24,narrative,filing,False,"Which board committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and how often does it receive updates?","The Audit Committee is responsible for oversight of risks from cybersecurity threats, and its members receive updates on a quarterly basis from senior management.","The Audit Committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and it receives updates on a quarterly basis.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1C; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1C
+B,fixed,True,25,narrative,filing,False,What is Tesla's dividend policy as described in its fiscal 2024 10-K?,Tesla has never declared or paid cash dividends on its common stock and does not anticipate paying any cash dividends in the foreseeable future.,"Tesla has never declared or paid cash dividends on its common stock and currently does not anticipate paying any cash dividends in the foreseeable future. Any future determination to declare cash dividends will be made at the discretion of the board of directors, subject to applicable laws, and will depend on Tesla's financial condition, results of operations, capital requirements, general business conditions, and other factors deemed relevant by the board.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 5; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,26,narrative,filing,False,"What did the Delaware Court of Chancery decide about Elon Musk's 2018 CEO Performance Award, and when, according to the fiscal 2024 10-K?","On January 30, 2024, the Court issued an opinion finding that the 2018 CEO Performance Award should be rescinded.","On January 30, 2024, the Delaware Court of Chancery issued an opinion finding that Elon Musk's 2018 CEO Performance Award should be rescinded. Later, on December 2, 2024, the Court denied the motion to revise that opinion and awarded Plaintiff’s counsel fees in the amount of $345 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+B,fixed,True,27,narrative,filing,False,"What groundwork for future growth did Tesla lay in 2019, according to its fiscal 2019 10-K?","Tesla commenced Model 3 production at Gigafactory Shanghai, prepared the Fremont Factory for Model Y production (which commenced in the first quarter of 2020), selected Berlin, Germany as the site of its next factory for Europe, and unveiled Cybertruck.","In 2019, Tesla laid the groundwork for its next phase of growth by commencing Model 3 production at Gigafactory Shanghai, preparing the Fremont Factory for Model Y production (which commenced in the first quarter of 2020), selecting Berlin, Germany as the site for its next factory for the European market, and unveiling the Cybertruck.",1.0,1.0,5,5,FY2019 Item 1; FY2019 Item 7; FY2019 Item 7; FY2019 Item 8; FY2019 Item 1
+B,fixed,True,28,narrative,filing,False,Which vehicle models were in active production at Gigafactory Texas according to the fiscal 2023 10-K?,Gigafactory Texas had Model Y and Cybertruck in active production.,"According to the fiscal 2023 10-K, the vehicle models in active production at Gigafactory Texas were Model Y and Cybertruck.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 2
+B,fixed,True,29,lookup,filing,False,"How many Tesla shares did Elon Musk beneficially own according to the fiscal 2025 10-K/A, and what percentage was that?","Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","Elon Musk beneficially owned 717,112,739 Tesla shares, which represented 20.3% of the outstanding shares, according to the fiscal 2025 10-K/A.",1.0,1.0,5,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 12
+B,fixed,True,30,narrative,filing,False,"According to the related person transactions in the fiscal 2025 10-K/A, what happened to xAI Holdings in February 2026?","On February 2, 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX.","In February 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX pursuant to a merger transaction.",0.5,1.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 10; FY2025 Item 13
+B,fixed,True,31,narrative,filing,False,When did Tesla start production at Gigafactory Berlin-Brandenburg?,Tesla started production at Gigafactory Berlin-Brandenburg close to the end of the first quarter of 2022.,Tesla started production at Gigafactory Berlin-Brandenburg closer to the end of the first quarter of 2022.,1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 1; FY2022 Item 7; FY2022 Item 2; FY2022 Item 8
+B,fixed,True,32,multi_year,filing,False,How did Tesla's number of full-time employees change from the end of 2017 to the end of 2019?,"Tesla had 37,543 full-time employees at the end of 2017 and 48,016 at the end of 2019.","As of December 31, 2017, Tesla had 37,543 full-time employees. As of December 31, 2019, Tesla had 48,016 full-time employees. 
+
+The number of full-time employees increased by 10,473 from the end of 2017 to the end of 2019.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 8; FY2017 Item 7; FY2017 Item 8; FY2017 Item 8; FY2019 Item 1; FY2019 Item 8; FY2019 Item 7; FY2019 Item 1A; FY2019 Item 8
+B,fixed,True,33,multi_year,filing,False,How did Tesla's worldwide employee count change between the end of 2020 and the end of 2024?,"Tesla's worldwide full-time employee count was 70,757 at the end of 2020 and its worldwide headcount was 125,665 at the end of 2024.","As of December 31, 2020, Tesla's worldwide employee count was 70,757. As of December 31, 2024, Tesla's worldwide employee count was 125,665. 
+
+The change in employee count between the end of 2020 and the end of 2024 is an increase of 54,908 employees.",1.0,1.0,5,5,FY2020 Item 7; FY2020 Item 8; FY2020 Item 1; FY2020 Item 7; FY2020 Item 5; FY2024 Item 1; FY2024 Item 7; FY2024 Item 1; FY2024 Item 1; FY2024 Item 8
+B,fixed,True,34,multi_year,filing,False,"What was Tesla's worldwide headcount at the end of 2022, 2023 and 2024, and in which of those years did it fall?","Headcount was 127,855 at the end of 2022, 140,473 at the end of 2023 and 125,665 at the end of 2024, so it fell in 2024.","The provided filings do not contain Tesla's worldwide headcount at the end of 2022. 
+
+However, the filings state:
+- As of December 31, 2023, Tesla's worldwide headcount was 140,473.
+- As of December 31, 2024, Tesla's worldwide headcount was 125,665.
+
+Tesla's headcount fell from 140,473 in 2023 to 125,665 in 2024.",0.6666666666666666,0.6666666666666666,2,5,FY2022 Item 1; FY2022 Item 7; FY2022 Item 8; FY2022 Item 8; FY2022 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 1; FY2023 Item 8; FY2023 Item 8; FY2024 Item 1; FY2024 Item 8; FY2024 Item 1; FY2024 Item 8; FY2024 Item 8
+B,fixed,True,35,multi_year,filing,False,How many vehicles did Tesla deliver in 2020 compared with 2023?,"Tesla delivered 499,647 vehicles in 2020 and 1,808,581 consumer vehicles in 2023.","In 2020, Tesla delivered 499,647 vehicles. In 2023, Tesla delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8; FY2020 Item 7; FY2023 Item 7; FY2023 Item 1; FY2023 Item 8; FY2023 Item 1; FY2023 Item 7
+B,fixed,True,36,multi_year,filing,False,How did Tesla's vehicle production change from 2021 to 2022?,"Tesla produced 930,422 vehicles in 2021 and 1,369,611 consumer vehicles in 2022.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2021 Item 7; FY2021 Item 1A; FY2021 Item 1A; FY2021 Item 7; FY2021 Item 7; FY2022 Item 1A; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+B,fixed,True,37,multi_year,filing,False,How much did Tesla spend on research and development in 2016 compared with 2024?,"R&D expense was $834,408 thousand (about $834 million) in 2016 and $4,540 million in 2024.",The provided filings do not contain this information.,0.0,0.5,1,1,FY2016 Item 7; FY2016 Item 8; FY2016 Item 1A; FY2016 Item 8; FY2016 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,38,multi_year,filing,False,How did revenue from Tesla's energy generation and storage segment change from 2022 to 2024?,"Energy generation and storage segment revenue grew from $3,909 million in 2022 to $10,086 million in 2024.","To determine how revenue from Tesla's energy generation and storage segment changed from 2022 to 2024, we refer to the provided excerpts.
+
+From the [FY2024 10-K | Item 8] excerpt:
+
+- Energy generation and storage segment revenue in 2024: $10,086 million
+- Energy generation and storage segment revenue in 2022: $3,909 million
+
+Change in revenue = $10,086 million - $3,909 million = $6,177 million
+
+Therefore, revenue from Tesla's energy generation and storage segment increased by $6,177 million from 2022 to 2024.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+B,fixed,True,39,multi_year,filing,False,How did Tesla's total revenues change from fiscal 2017 to fiscal 2018?,"Total revenues grew from $11,758,751 thousand (about $11.76 billion) in 2017 to $21,461,268 thousand (about $21.46 billion) in 2018.","Tesla's total revenues increased from $11,758,751 thousand in fiscal 2017 to $21,461,268 thousand in fiscal 2018. This represents an increase of $9,702,517 thousand (or approximately $9.70 billion).",1.0,1.0,5,5,FY2017 Item 7; FY2017 Item 8; FY2017 Item 7; FY2017 Item 8; FY2017 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 8; FY2018 Item 7; FY2018 Item 7
+B,fixed,True,40,multi_year,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2023 compared with the end of 2024?,Tesla had $29.09 billion at the end of 2023 and $36.56 billion at the end of 2024.,"At the end of 2023, Tesla had $29.09 billion in cash and cash equivalents and investments.  
+At the end of 2024, Tesla had $36.56 billion in cash and cash equivalents and investments.",1.0,1.0,5,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+B,fixed,True,41,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2018?,"In 2018 Tesla produced 254,530 vehicles and delivered 245,506 vehicles.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7
+B,fixed,True,42,lookup,filing,False,How much bitcoin did Tesla purchase in 2021?,During 2021 Tesla purchased an aggregate of $1.50 billion in bitcoin.,Tesla purchased $1.50 billion in bitcoin in 2021.,1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
+B,fixed,True,43,lookup,filing,False,How many full-time employees did Tesla and SolarCity each have at the end of 2016?,"As of December 31, 2016, Tesla had 17,782 full-time employees and SolarCity Corporation had 12,243.","Tesla, Inc. had 17,782 full-time employees and SolarCity Corporation had 12,243 full-time employees as of December 31, 2016.",1.0,1.0,5,5,FY2016 Item 1; FY2016 Item 7; FY2016 Item 8; FY2016 Item 9A; FY2016 Item 8
+B,fixed,True,44,unanswerable,filing,False,How many vehicles did Tesla deliver in 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14).,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11
+B,fixed,True,45,unanswerable,filing,False,What was Tesla's gross margin in fiscal 2025?,The provided filings do not contain this information: the FY2025 10-K/A in the corpus has no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11
+B,fixed,True,46,lookup,casual,True,how many cars did tesla sell in 2024?,"Tesla delivered approximately 1,789,000 consumer vehicles in 2024 (and produced approximately 1,773,000).","Tesla delivered approximately 1,789,000 consumer vehicles in 2024.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+B,fixed,True,47,lookup,casual,False,how many people worked at tesla at the end of 2024?,"Tesla's worldwide employee headcount was 125,665 as of December 31, 2024.","As of December 31, 2024, Tesla's employee headcount worldwide was 125,665.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+B,fixed,True,48,lookup,casual,False,did tesla make money in 2020?,"Yes. Net income attributable to common stockholders was $721 million in 2020, after a net loss of $862 million in 2019.","Yes, Tesla made money in 2020. The company's net income attributable to common stockholders was $721 million in 2020.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 7; FY2020 Item 7
+B,fixed,True,49,lookup,casual,False,how much money did tesla bring in in 2022?,"Tesla's total revenues were $81,462 million (about $81.5 billion) in 2022.",Tesla brought in $81.46 billion in total revenues in 2022.,1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8
+B,fixed,True,50,lookup,casual,False,how big was tesla's battery and solar business in 2024?,"The energy generation and storage segment had revenue of $10,086 million in 2024, up 67% from $6,035 million in 2023.","Tesla's energy generation and storage business, which includes battery and solar products, had a revenue increase of $4.05 billion, or 67%, in the year ended December 31, 2024, compared to 2023. This growth was primarily due to a 16.7 GWh increase in Megapack and Powerwall deployments compared to the prior year. In 2024, Tesla deployed 31.4 GWh of energy storage products. The exact revenue figure for the energy generation and storage segment is not provided in the excerpts.",0.0,0.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,51,lookup,casual,False,how much cash did tesla have sitting around at the end of 2023?,Tesla ended 2023 with $29.09 billion in cash and cash equivalents and investments.,"Tesla had $16,398 million in cash and cash equivalents at the end of 2023.",0.0,1.0,2,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8
+B,fixed,True,52,lookup,casual,False,how many cars did tesla make in 2023?,"Tesla produced 1,845,985 consumer vehicles in 2023.","Tesla produced 1,845,985 consumer vehicles in 2023.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 1
+B,fixed,True,53,lookup,casual,False,how much did tesla spend on r&d in 2022?,"Research and development expense was $3,075 million in 2022, up 19% from $2,593 million in 2021.",The provided filings do not contain this information.,0.0,0.0,1,2,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+B,fixed,True,54,lookup,casual,False,how much of tesla does elon own?,"According to the fiscal 2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2025 Item 11; FY2025 Item 13; FY2025 Item 10; FY2025 Item 12; FY2025 Item 11
+B,fixed,True,55,narrative,casual,False,did tesla get fined by the sec over musk saying he'd take tesla private?,"Yes. Under the 2018 SEC settlement, Tesla and Elon Musk each paid a civil penalty of $20 million, and an independent director was appointed Chair of the Board.","Yes, Tesla was fined by the SEC. In FY2018, Tesla paid a civil penalty of $20 million as part of a settlement with the SEC related to Elon Musk’s statement about taking Tesla private.",1.0,1.0,5,5,FY2018 Item 8; FY2018 Item 1A; FY2018 Item 8; FY2018 Item 1A; FY2018 Item 7
+B,fixed,True,56,definition,casual,True,what does tesla mean by cash deliveries?,"Cash deliveries are deliveries of new vehicles sold for cash or with financing, i.e. vehicles that are not subject to lease accounting; their revenue is recorded as automotive sales revenue rather than automotive leasing revenue.",The provided filings do not contain this information.,0.0,1.0,1,5,FY2024 Item 1A; FY2024 Item 8; FY2024 Item 8; FY2024 Item 1A; FY2024 Item 1
+B,fixed,True,57,definition,casual,False,what are tesla's regulatory credits and who buys them?,Automotive regulatory credits revenue comes from selling regulatory credits to other automotive manufacturers; it is directly related to Tesla's new vehicle production and sales.,"Tesla's regulatory credits are tradable credits earned under various regulations related to zero-emission vehicles (ZEVs), greenhouse gas, fuel economy, and clean fuel. Tesla sells these credits to other regulated entities, who use them to comply with emission standards and other regulatory requirements.",0.0,1.0,4,5,FY2024 Item 1; FY2024 Item 8; FY2024 Item 7; FY2024 Item 1A; FY2024 Item 8
+B,fixed,True,58,definition,casual,False,what counts as automotive leasing revenue for tesla?,"Automotive leasing revenue includes the amortization of revenue for vehicles under direct operating lease agreements, plus direct sales-type leasing programs where all revenue is recognized upon delivery to the customer.","Automotive leasing revenue for Tesla includes revenue from both operating leases and sales-type leases. For operating leases, revenue is generated from qualifying customers who lease a vehicle directly from Tesla for up to 48 months in the U.S., Canada, and certain countries in Europe. For sales-type leases, revenue includes all revenue and costs associated with the lease recognized upon delivery of the vehicle, as well as interest income recorded over time based on the implicit rate in the lease and invoiced monthly to customers. This applies to direct leases and vehicles financed by Tesla under loan arrangements in certain countries in Asia and Europe, with terms up to 72 months.",1.0,1.0,4,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+B,fixed,True,59,definition,casual,False,what's included in tesla's services and other revenue?,"Services and other revenue consists of sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue and retail merchandise sales.","Tesla's services and other revenue includes sales of used vehicles, non-warranty maintenance services and collision repairs, part sales, paid Supercharging, insurance services revenue, and retail merchandise sales. Revenues related to repair, maintenance, and vehicle insurance services are recognized over time as services are provided, and extended service plans are recognized over the performance period of the service contract. Used vehicles, services, service plans, vehicle components, and merchandise are sold separately and priced at standalone selling prices for revenue allocation purposes.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,60,definition,casual,False,what does tesla make at its buffalo factory?,"According to the fiscal 2017 10-K, Gigafactory 2 in Buffalo, New York produces PV (solar) cells and panels, with Panasonic as manufacturing partner and supplier.",The provided filings do not contain this information.,0.0,0.5,1,5,FY2017 Item 1; FY2017 Item 1; FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 7
+B,fixed,True,61,definition,casual,False,how does tesla deal with hackers and cyber attacks?,"Per the fiscal 2023 10-K, Tesla runs privacy and cybersecurity reviews, penetration testing with external tools, a bug bounty program and employee training, and has a four-stage incident response process: preparation, detection and analysis, containment/eradication/recovery, and post-incident analysis.","Tesla deals with hackers and cyber attacks by implementing security measures intended to prevent unauthorized access to its information technology networks, products, and their systems. The company encourages reporting of potential vulnerabilities in the security of its products through its security vulnerability reporting policy. Tesla's cybersecurity risk management and strategy processes are overseen by leaders from its Information Security, Product Security, Compliance, and Legal teams, who monitor prevention, mitigation, detection, and response efforts. Additionally, Tesla continues to expand and enhance its information technology systems as its operations grow, including deploying new internally developed systems in the U.S. and abroad with measures designed to protect against intellectual property theft, data breaches, sabotage, and other cyber threats.",0.0,0.0,2,5,FY2023 Item 1A; FY2023 Item 1A; FY2023 Item 1A; FY2023 Item 1C; FY2023 Item 3
+B,fixed,True,62,reasoning,casual,True,did tesla make a profit in 2024 after capex?,"Yes. Net income attributable to common stockholders was $7,091 million in 2024, and operating cash flow of $14.92 billion exceeded capital expenditures of $11.34 billion, leaving about $3.58 billion of free cash flow.","To determine if Tesla made a profit in 2024 after capital expenditures (capex), we compare net income to capex.
+
+From the FY2024 10-K | Item 7:
+- Net income attributable to common stockholders in 2024 was $7.09 billion.
+- Capital expenditures in 2024 amounted to $11.34 billion.
+
+Capex ($11.34 billion) exceeds net income ($7.09 billion). Therefore, after accounting for capex, Tesla did not have a positive net profit.
+
+Answer: No, Tesla did not make a profit in 2024 after capex, as capital expenditures of $11.34 billion exceeded net income of $7.09 billion.",0.5,1.0,1,2,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+B,fixed,True,63,reasoning,casual,False,why did tesla's car sales revenue drop in 2024?,"Automotive sales revenue fell $6.03 billion (8%), primarily due to lower average selling prices driven by overall price reductions and attractive financing options, plus about 22,000 fewer combined Model 3 and Model Y cash deliveries; this was partly offset by about 19,000 more deliveries of other models (mainly Cybertruck).","Tesla's automotive sales revenue decreased by $6.03 billion, or 8%, in the year ended December 31, 2024 compared to the year ended December 31, 2023, primarily due to lower average selling prices on its vehicles driven by overall price reductions and attractive financing options provided in 2024, as well as mix. Additionally, there was a decrease of approximately 22,000 combined Model 3 and Model Y cash deliveries. These decreases were partially offset by an increase of approximately 19,000 deliveries of other models, primarily due to the production ramp of Cybertruck, and the recognition of $596 million of FSD (Supervised) revenue in 2024.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,64,reasoning,casual,False,is tesla's energy business growing faster than its car business?,"Yes, in 2024: energy generation and storage segment revenue grew 67%, while total automotive revenues fell 6% (from $82,419 million to $77,070 million).",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1A
+B,fixed,True,65,reasoning,casual,False,was 2024 a better or worse year than 2023 for tesla's profits?,"Worse: net income attributable to common stockholders fell from $14,997 million in 2023 to $7,091 million in 2024, roughly halving.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+B,fixed,True,66,reasoning,casual,False,did tesla hire more people or cut jobs in 2024?,"Tesla's worldwide headcount fell from 140,473 at the end of 2023 to 125,665 at the end of 2024.","Tesla hired more people in 2024. As of December 31, 2024, Tesla's worldwide employee headcount was 125,665. Additionally, the company expanded several hiring and training programs in 2024, including hiring over 800 graduates through the Manufacturing Development Program, over 400 technicians through the START program, and expanding apprenticeship and trainee initiatives globally. These actions indicate a net increase in workforce, not job cuts.",0.5,0.5,1,2,FY2023 Item 1; FY2023 Item 1; FY2023 Item 1A; FY2023 Item 1A; FY2023 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+B,fixed,True,67,multi_year,casual,False,how much did tesla's car deliveries grow from 2018 to 2021?,"Deliveries grew from 245,506 vehicles in 2018 to 936,222 in 2021, almost a fourfold increase.",The provided filings do not contain this information.,0.0,0.5,1,5,FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
+C,semantic,False,1,lookup,filing,False,What were Tesla's total revenues for fiscal year 2023?,"Total revenues were $96,773 million in 2023, up from $81,462 million in 2022.","Tesla's total revenues for fiscal year 2023 were $96,773 million.",1.0,1.0,5,5,FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8
+C,semantic,False,2,lookup_units,filing,False,What were Tesla's total revenues in fiscal 2017?,"Total revenues were $11,758,751 thousand (about $11.76 billion) in 2017.","Tesla's total revenues in fiscal 2017 were $11,758,751,000.",1.0,1.0,5,5,FY2017 Item 8; FY2017 Item 8; FY2017 Item 8; FY2017 Item 7; FY2017 Item 7
+C,semantic,False,3,lookup,filing,False,What was Tesla's net income attributable to common stockholders in fiscal 2024?,"Net income attributable to common stockholders was $7,091 million in 2024, down from $14,997 million in 2023.","Tesla's net income attributable to common stockholders in fiscal 2024 was $7,091 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+C,semantic,False,4,unanswerable,filing,False,What was Tesla's total revenue for fiscal year 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14) and contains no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 11; FY2025 Item 13; FY2025 Item 11; FY2025 Item 14
+C,semantic,False,5,lookup,filing,False,"What was Tesla's net income attributable to common stockholders in 2020, and how did it compare with 2019?","Net income attributable to common stockholders was $721 million in 2020, compared with a net loss of $862 million in 2019.","Tesla's net income attributable to common stockholders in 2020 was $721 million, representing a favorable change of $1.58 billion compared to 2019.",0.5,0.5,2,5,FY2020 Item 8; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8; FY2020 Item 8
+C,semantic,False,6,lookup,filing,False,How many consumer vehicles did Tesla produce and deliver in 2023?,"In 2023 Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.","In 2023, Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 7; FY2023 Item 1
+C,semantic,False,7,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2021?,"In 2021 Tesla produced 930,422 vehicles and delivered 936,222 vehicles.","In 2021, Tesla produced 930,422 vehicles and delivered 936,222 vehicles.",1.0,1.0,5,5,FY2021 Item 8; FY2021 Item 7; FY2021 Item 1; FY2021 Item 7; FY2021 Item 7
+C,semantic,False,8,lookup,filing,False,How many total vehicles did Tesla deliver and produce in 2019?,"In 2019 Tesla achieved annual delivery and production records of 367,656 and 365,232 total vehicles, respectively.","Tesla delivered 367,656 total vehicles and produced 365,232 total vehicles in 2019.",1.0,1.0,5,5,FY2019 Item 7; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 1
+C,semantic,False,9,lookup,filing,False,"How many Model 3 vehicles did Tesla deliver in 2017, and how many Model S and Model X vehicles?","In 2017 Tesla delivered 101,420 Model S and Model X vehicles and 1,764 Model 3 vehicles.","Tesla delivered 1,764 Model 3 vehicles and 101,420 Model S and Model X vehicles in 2017.",1.0,1.0,5,5,FY2017 Item 7; FY2017 Item 7; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 7
+C,semantic,False,10,lookup,filing,False,How many full-time employees did Tesla have at the end of 2018?,"As of December 31, 2018, Tesla had 48,817 full-time employees.","As of December 31, 2018, Tesla, Inc. had 48,817 full-time employees.",1.0,1.0,5,5,FY2018 Item 1; FY2018 Item 7; FY2018 Item 8; FY2018 Item 8; FY2018 Item 1A
+C,semantic,False,11,lookup,filing,False,"How much did Tesla spend on research and development in 2024, and how did that compare with 2023?","Research and development expense was $4,540 million in 2024 versus $3,969 million in 2023, an increase of $571 million (14%).","Tesla spent $4,540 million on research and development in 2024. This was an increase of $571 million, or 14%, compared to $3,969 million spent in 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+C,semantic,False,12,lookup,filing,False,"What was revenue from Tesla's energy generation and storage segment in 2024, and how much did it grow?","Energy generation and storage segment revenue was $10,086 million in 2024, up $4,051 million or 67% from $6,035 million in 2023.","From the provided excerpts:
+
+- In the ""[FY2024 10-K | Item 7]"" section, it states: ""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023...""
+
+This indicates that the revenue from Tesla's energy generation and storage segment grew by $4.05 billion, or 67%, in 2024 compared to 2023.
+
+To determine the 2024 revenue, we need the 2023 revenue. However, the exact 2023 revenue for the energy generation and storage segment is not directly provided. But we can infer it using the growth amount.
+
+Let the 2023 energy generation and storage revenue be X. Then:
+
+X * 0.67 = $4.05 billion  
+X = $4.05 billion / 0.67 ≈ $6.0448 billion
+
+Then 2024 revenue = X + $4.05 billion ≈ $6.0448 billion + $4.05 billion = $10.0948 billion
+
+However, we must rely only on exact figures from the text. The text does not provide the exact 2024 revenue for the energy generation and storage segment directly, nor does it give the 2023 revenue explicitly.
+
+But in the same ""[FY2024 10-K | Item 7]"" section, it says: ""In 2024, we recognized total revenues of $97.69 billion..."" — this is total company revenue, not energy-specific.
+
+No excerpt provides the exact dollar amount of energy generation and storage revenue in 2024 — only the increase of $4.05 billion (67%).
+
+Therefore, while we know the growth, we do not have the exact revenue figure stated directly.
+
+Wait — rechecking: The first excerpt says:
+
+""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023...""
+
+This means:
+
+Let 2023 revenue = R  
+Then: 0.67R = 4.05 → R = 4.05 / 0.67 ≈ 6.044776 billion  
+Then 2024 revenue = R + 4.05 = 6.044776 + 4.05 = 10.094776 billion ≈ $10.09 billion
+
+But again, this is a calculation. The filings do not explicitly state the 2024 energy generation and storage revenue.
+
+However, in the absence of an explicit figure, and since the question asks for the revenue and the growth, and the growth is explicitly stated as $4.05 billion (67%), but the exact revenue amount is not directly given in the excerpts, we must conclude:
+
+The provided filings do not contain this information.",1.0,0.5,2,2,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+C,semantic,False,13,lookup,filing,False,"Did Tesla's total automotive revenues increase or decrease in 2024 compared to 2023, and by how much?","Total automotive revenues decreased by $5,349 million (6%), from $82,419 million in 2023 to $77,070 million in 2024.","Tesla's total automotive revenues decreased in 2024 compared to 2023 by $5,349 million. In 2024, total automotive revenues were $77,070 million, down from $82,419 million in 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+C,semantic,False,14,lookup,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2024?,"Tesla ended 2024 with $36.56 billion in cash and cash equivalents and investments, an increase of $7.47 billion from the end of 2023.","At the end of 2024, Tesla had $16.139 billion in cash and cash equivalents and $20.424 billion in short-term investments. Additionally, the total of cash and cash equivalents and investments was $36.56 billion.
+
+Source: FY2024 10-K | Item 7 states, ""We ended 2024 with $36.56 billion in cash and cash equivalents and investments...""  
+The individual components are confirmed in the Consolidated Balance Sheets (FY2024 10-K | Item 8):  
+- Cash and cash equivalents: $16,139 million  
+- Short-term investments: $20,424 million  
+
+Total: $16,139 million + $20,424 million = $36,563 million ≈ $36.56 billion.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+C,semantic,False,15,lookup,filing,False,"What was the fair market value of Tesla's bitcoin holdings at the end of 2021, and what gains did Tesla realize from selling bitcoin that year?","The fair market value of Tesla's bitcoin holdings as of December 31, 2021 was $1.99 billion; Tesla realized gains of $128 million from selling a portion of its holdings in March 2021.",The fair market value of Tesla's bitcoin holdings at the end of 2021 was $1.99 billion. Tesla realized gains of $128 million from selling a portion of its bitcoin holdings in March 2021.,1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 8; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7
+C,semantic,False,16,multi_year,filing,False,How did Tesla's total revenues change between fiscal 2019 and fiscal 2023?,"Total revenues grew from $24,578 million in 2019 to $96,773 million in 2023, roughly a fourfold increase.","Tesla's total revenues increased from $24,578 million in fiscal year 2019 to $96,773 million in fiscal year 2023. This represents an increase of $72,195 million over the period.",1.0,1.0,5,5,FY2019 Item 8; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7
+C,semantic,False,17,multi_year,filing,False,"What was Tesla's net income attributable to common stockholders in each of 2022, 2023 and 2024?","Net income attributable to common stockholders was $12,556 million in 2022, $14,997 million in 2023 and $7,091 million in 2024.","- In 2022, Tesla's net income attributable to common stockholders was $12,556 million.
+- In 2023, Tesla's net income attributable to common stockholders was $14,997 million.
+- In 2024, Tesla's net income attributable to common stockholders was $7,091 million.",1.0,1.0,5,5,FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 5; FY2022 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+C,semantic,False,18,lookup_units,filing,False,"What fees did PricewaterhouseCoopers bill Tesla in 2025, in total and for audit fees?","PwC billed total fees of $18,070 thousand in 2025, including audit fees of $16,485 thousand (2024: total $17,923 thousand, audit $15,634 thousand).","In 2025, PricewaterhouseCoopers billed Tesla a total of $18,070,000. The audit fees amounted to $16,485,000.",1.0,1.0,5,5,FY2025 Item 14; FY2025 Item 14; FY2025 Item 14; FY2025 Item 14; FY2025 Item 13
+C,semantic,False,19,narrative,filing,False,What are the stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K?,"Tesla's incident response and breach management process has four stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication and recovery, and 4) post-incident analysis.","The stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K are:  
+1) preparation for a cybersecurity incident,  
+2) detection and analysis of a security incident,  
+3) containment, eradication and recovery, and  
+4) post-incident.",1.0,1.0,4,5,FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 7; FY2023 Item 1C
+C,semantic,False,20,narrative,filing,False,"According to Tesla's fiscal 2024 risk factors, which individual is Tesla highly dependent on, and what are his roles?","Tesla states it is highly dependent on the services of Elon Musk, Technoking of Tesla and its Chief Executive Officer.","According to Tesla's fiscal 2024 risk factors, Tesla is highly dependent on Elon Musk, who serves as Technoking of Tesla and Chief Executive Officer.",1.0,1.0,5,5,FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1A; FY2024 Item 1
+C,semantic,False,21,narrative,filing,False,When did Tesla complete its acquisition of SolarCity?,"Tesla's acquisition of SolarCity Corporation closed on November 21, 2016.","Tesla completed its acquisition of SolarCity on November 21, 2016.",1.0,1.0,5,5,FY2016 Item 6; FY2016 Item 8; FY2016 Item 9A; FY2016 Item 3; FY2016 Item 7
+C,semantic,False,22,narrative,filing,False,What did Tesla and Elon Musk agree to in the 2018 SEC settlement over his statement about taking Tesla private?,"Tesla and Mr. Musk each paid a civil penalty of $20 million; an independent director was appointed Chair of the Board (to serve for at least three years), two additional independent directors were appointed, and Tesla enhanced its disclosure controls and other corporate governance matters.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2018 Item 8; FY2018 Item 7; FY2018 Item 8; FY2018 Item 8; FY2018 Item 8
+C,semantic,False,23,narrative,filing,False,"According to the fiscal 2017 risk factors, who is Tesla's manufacturing partner and supplier for lithium-ion cells, and at which factory?","Tesla signed long-term agreements with Panasonic to be its manufacturing partner and supplier for lithium-ion cells at Gigafactory 1 in Nevada (and for PV cells and panels at Gigafactory 2 in Buffalo, New York).","Tesla's manufacturing partner and supplier for lithium-ion cells is Panasonic, and this partnership is at Gigafactory 1 in Nevada.",1.0,1.0,5,5,FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 1; FY2017 Item 1A
+C,semantic,False,24,narrative,filing,False,"Which board committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and how often does it receive updates?","The Audit Committee is responsible for oversight of risks from cybersecurity threats, and its members receive updates on a quarterly basis from senior management.","The Audit Committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and it receives updates on a quarterly basis.",1.0,1.0,5,5,FY2024 Item 1C; FY2024 Item 1C; FY2024 Item 1; FY2024 Item 8; FY2024 Item 1C
+C,semantic,False,25,narrative,filing,False,What is Tesla's dividend policy as described in its fiscal 2024 10-K?,Tesla has never declared or paid cash dividends on its common stock and does not anticipate paying any cash dividends in the foreseeable future.,"Tesla's dividend policy as described in its fiscal 2024 10-K states that any future determination to declare cash dividends will be made at the discretion of the board of directors, subject to applicable laws, and will depend on the company's financial condition, results of operations, capital requirements, general business conditions, and other factors deemed relevant by the board.",0.0,0.0,2,5,FY2024 Item 5; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,26,narrative,filing,False,"What did the Delaware Court of Chancery decide about Elon Musk's 2018 CEO Performance Award, and when, according to the fiscal 2024 10-K?","On January 30, 2024, the Court issued an opinion finding that the 2018 CEO Performance Award should be rescinded.","The Delaware Court of Chancery decided on January 30, 2024, that the 2018 CEO Performance Award should be rescinded.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+C,semantic,False,27,narrative,filing,False,"What groundwork for future growth did Tesla lay in 2019, according to its fiscal 2019 10-K?","Tesla commenced Model 3 production at Gigafactory Shanghai, prepared the Fremont Factory for Model Y production (which commenced in the first quarter of 2020), selected Berlin, Germany as the site of its next factory for Europe, and unveiled Cybertruck.","According to Tesla's fiscal 2019 10-K, the groundwork for future growth laid in 2019 included capital expenditures of $1.33 billion, primarily for the construction of Gigafactory Shanghai, Model 3 production, and preparations for Model Y.",0.5,0.5,2,5,FY2019 Item 8; FY2019 Item 8; FY2019 Item 8; FY2019 Item 1; FY2019 Item 7
+C,semantic,False,28,narrative,filing,False,Which vehicle models were in active production at Gigafactory Texas according to the fiscal 2023 10-K?,Gigafactory Texas had Model Y and Cybertruck in active production.,"According to the FY2023 10-K, the vehicle models in active production at Gigafactory Texas were Model Y and Cybertruck.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 1
+C,semantic,False,29,lookup,filing,False,"How many Tesla shares did Elon Musk beneficially own according to the fiscal 2025 10-K/A, and what percentage was that?","Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","According to the fiscal 2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, which represented 20.3% of Tesla's common stock.",1.0,1.0,5,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 12; FY2025 Item 11
+C,semantic,False,30,narrative,filing,False,"According to the related person transactions in the fiscal 2025 10-K/A, what happened to xAI Holdings in February 2026?","On February 2, 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX.","In February 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX pursuant to a merger transaction.",0.5,1.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 11; FY2025 Item 13
+C,semantic,False,31,narrative,filing,False,When did Tesla start production at Gigafactory Berlin-Brandenburg?,Tesla started production at Gigafactory Berlin-Brandenburg close to the end of the first quarter of 2022.,Tesla started production at Gigafactory Berlin-Brandenburg closer to the end of the first quarter of 2022.,1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 2; FY2022 Item 7
+C,semantic,False,32,multi_year,filing,False,How did Tesla's number of full-time employees change from the end of 2017 to the end of 2019?,"Tesla had 37,543 full-time employees at the end of 2017 and 48,016 at the end of 2019.","As of December 31, 2017, Tesla had 37,543 full-time employees. As of December 31, 2019, Tesla had 48,016 full-time employees. 
+
+The number of full-time employees increased by 10,473 from the end of 2017 to the end of 2019.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 8; FY2017 Item 1A; FY2017 Item 8; FY2017 Item 7; FY2019 Item 1; FY2019 Item 8; FY2019 Item 8; FY2019 Item 7; FY2019 Item 8
+C,semantic,False,33,multi_year,filing,False,How did Tesla's worldwide employee count change between the end of 2020 and the end of 2024?,"Tesla's worldwide full-time employee count was 70,757 at the end of 2020 and its worldwide headcount was 125,665 at the end of 2024.","As of December 31, 2020, Tesla's worldwide employee count was 70,757. As of December 31, 2024, Tesla's worldwide employee count was 125,665. 
+
+The change in employee count is an increase of 54,908 employees from the end of 2020 to the end of 2024.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8; FY2020 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 8; FY2024 Item 1
+C,semantic,False,34,multi_year,filing,False,"What was Tesla's worldwide headcount at the end of 2022, 2023 and 2024, and in which of those years did it fall?","Headcount was 127,855 at the end of 2022, 140,473 at the end of 2023 and 125,665 at the end of 2024, so it fell in 2024.",The provided filings do not contain this information.,0.0,0.6666666666666666,1,1,FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 1; FY2023 Item 8; FY2023 Item 8; FY2024 Item 8; FY2024 Item 1; FY2024 Item 1; FY2024 Item 8; FY2024 Item 8
+C,semantic,False,35,multi_year,filing,False,How many vehicles did Tesla deliver in 2020 compared with 2023?,"Tesla delivered 499,647 vehicles in 2020 and 1,808,581 consumer vehicles in 2023.","In 2020, Tesla delivered 499,647 vehicles. In 2023, Tesla delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2020 Item 7; FY2020 Item 7; FY2020 Item 7; FY2020 Item 7; FY2020 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 1
+C,semantic,False,36,multi_year,filing,False,How did Tesla's vehicle production change from 2021 to 2022?,"Tesla produced 930,422 vehicles in 2021 and 1,369,611 consumer vehicles in 2022.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7
+C,semantic,False,37,multi_year,filing,False,How much did Tesla spend on research and development in 2016 compared with 2024?,"R&D expense was $834,408 thousand (about $834 million) in 2016 and $4,540 million in 2024.","In 2016, Tesla spent $834.4 million on research and development. In 2024, Tesla spent $4,540 million ($4.54 billion) on research and development.",1.0,1.0,5,5,FY2016 Item 7; FY2016 Item 7; FY2016 Item 7; FY2016 Item 1A; FY2016 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,38,multi_year,filing,False,How did revenue from Tesla's energy generation and storage segment change from 2022 to 2024?,"Energy generation and storage segment revenue grew from $3,909 million in 2022 to $10,086 million in 2024.","To determine how revenue from Tesla's energy generation and storage segment changed from 2022 to 2024, we need to extract the relevant revenue figures for those years.
+
+From the FY2022 10-K:
+- In 2022, Tesla deployed 6.5 GWh of energy storage products and 348 megawatts of solar energy systems, but the revenue figure is not directly stated in the excerpt.
+- However, in the same excerpt, it states: ""In 2022, we recognized total revenues of $81.46 billion, respectively, representing an increase of $27.64 billion, compared to the prior year."" This is total revenue, not specific to energy generation and storage.
+
+We need the specific energy generation and storage revenue for 2022. Looking at gross profit and margin:
+- In FY2022 10-K, ""Gross profit energy generation and storage segment"" was $288 million, and ""Gross margin energy generation and storage segment"" was 7.4%.
+- Using this, we can calculate revenue:  
+  Revenue = Gross Profit / Gross Margin  
+  Revenue = $288 million / 7.4% = $288 / 0.074 ≈ $3,891.89 million, or approximately $3.89 billion.
+
+But this is an estimate. However, in the FY2024 10-K | Item 8, a table shows:
+- Energy generation and storage cost of revenues for 2024: $2,029 million
+- But this is cost, not revenue.
+
+Wait — the table in FY2024 10-K | Item 8 is titled ""Depreciation and amortization included in Cost of revenues"", and the numbers listed ($2,029 and $2,487) are for cost of revenues, not revenue.
+
+So that does not help.
+
+But in FY2024 10-K | Item 7:
+- ""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023...""
+
+So:
+Let 2023 revenue = X  
+Then: 0.67X = $4.05 billion  
+X = $4.05 / 0.67 ≈ $6.0448 billion  
+So 2024 revenue = X + 4.05 = $6.0448 + 4.05 = $10.0948 billion
+
+Alternatively, since it increased by 67%, 2024 revenue = 1.67 × X = X + 4.05 → same result.
+
+But we need 2022 revenue.
+
+From FY2022 10-K | Item 7:
+- ""Energy generation and storage revenue increased $1.12 billion, or 40%, in the year ended December 31, 2022 as compared to the year ended December 31, 2021""
+
+So:
+Let 2021 revenue = Y  
+Then: 0.40Y = $1.12 billion  
+Y = $1.12 / 0.40 = $2.8 billion  
+So 2022 revenue = $2.8 + $1.12 = $3.92 billion
+
+Thus, energy generation and storage revenue in 2022 was $3.92 billion.
+
+Now, for 2024:
+From the 67% increase from 2023 to 2024 of $4.05 billion:
+2023 revenue = $4.05 billion / 0.67 ≈ $6.0448 billion  
+2024 revenue = $6.0448 + $4.05 = $10.0948 billion, or approximately $10.09 billion
+
+But is there an exact figure?
+
+Wait — in the FY2024 10-K | Item 8, the table says:
+""Depreciation and amortization included in Cost of revenues for the energy generation and storage segment for the years ended December 31, 2024, 2023 and 2022 was $377 million, $343 million and $331 million, respectively.""
+
+This is not revenue.
+
+But in the same document, Item 7 says:
+""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023, primarily due to a 16.7 GWh increase in Megapack and Powerwall deployments compared to the prior year.""
+
+So:
+Let R2023 = energy generation and storage revenue in 2023  
+Then: 0.67 × R2023 = $4.05 billion  
+R2023 = $4.05 / 0.67 = $6,044,776,119.40 ≈ $6.045 billion  
+R2024 = $6.045 + $4.05 = $10.095 billion
+
+But we need to know if this is exact.
+
+Alternatively, is there a direct revenue figure?
+
+No direct revenue figure for energy generation and storage in 2024 is given in the excerpts.
+
+But in the FY2022 10-K, we have:
+- Increase of $1.12 billion, or 40%, in 2022 vs 2021 → so 2022 revenue = $1.12B / 0.40 = $2.8B (2021) → $3.92B (2022)
+
+Now, can we get 2024 revenue?
+
+From FY2024 10-K:
+- Cost of energy generation and storage revenue increased $2.55 billion, or 52%, in 2024 vs 2023.
+
+But we don't have gross margin for 2024 to back into revenue.
+
+Wait — in the same FY2024 10-K | Item 7, it says:
+""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023""
+
+So the increase is $4.05 billion, and it's 67% of 2023 revenue.
+
+So 2023 revenue = $4.05 billion / 0.67 = $6.044776 billion
+
+2024 revenue = $6.044776 + $4.05 = $10.094776 billion ≈ $10.09 billion
+
+But we need to know if the filings provide the actual revenue figures.
+
+Alternatively, is there a direct statement of revenue?
+
+No, the excerpts do not provide the exact revenue for energy generation and storage in 2024 or 2023 directly.
+
+But in the FY2022 10-K, we can calculate 2022 revenue as $3.92 billion based on the 40% increase of $1.12 billion.
+
+For 2024, we can calculate revenue as $10.095 billion based on the 67% increase of $4.05 billion from 2023.
+
+But the question is: ""How did revenue from Tesla's energy generation and storage segment change from 2022 to 2024?""
+
+So we need to compare 2022 and 2024.
+
+We have:
+- 2022 revenue: $3.92 billion (calculated from $1.12B increase, 40% growth)
+- 2024 revenue: $10.095 billion (calculated from $4.05B increase, 67% growth from 2023)
+
+But we don't have a direct link from 2022 to 2024. We need 2023 revenue to bridge.
+
+We have:
+- 2022: $3.92 billion
+- 2023: $6.045 billion (from $4.05B / 0.67)
+- 2024: $10.095 billion
+
+So from 2022 to 2024, revenue increased from $3.92 billion to $10.095 billion.
+
+Change = $10.095 - $3.92 = $6.175 billion
+
+But are these figures exact?
+
+The problem says: ""Use ONLY the excerpts below"" and ""Give exact figures with units and the fiscal year they refer to.""
+
+We are deriving the figures, not given them directly.
+
+Is there a direct statement of revenue for energy generation and storage in 2022 or 2024?
+
+In the FY2022 10-K, it says:
+""Energy generation and storage revenue increased $1.12 billion, or 40%, in the year ended December 31, 2022 as compared to the year ended December 31, 2021""
+
+So 2022 revenue = 2021 revenue + $1.12 billion  
+And (1.12 / 2021 revenue) = 0.40 → 2021 revenue = $2.8 billion → 2022 revenue = $3.92 billion
+
+This is exact based on the data.
+
+Similarly, for 2024:
+""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023""
+
+So 2024 revenue = 2023 revenue + $4.05 billion  
+And (4.05 / 2023 revenue) = 0.67 → 2023 revenue = $4.05 / 0.67 = $6,044,776,119.40
+
+But $4.05 billion is likely $4,050,000,000
+
+So 2023 revenue = 4,050,000,000 / 0.67 = 6,044,776,119.40
+
+2024 revenue = 6,044,776,119.40 + 4,050,000,000 = 10,094,776,119.40 ≈ $10.095 billion
+
+But is this ""exact"" as per the instruction?
+
+The instruction says ""give exact figures"", but if we have to calculate, is that allowed?
+
+The problem says ""use ONLY the excerpts"" and ""give exact figures"", but if the figure is not stated, but can be derived, is that acceptable?
+
+But in financial analysis, deriving from given growth rates and dollar changes is standard.
+
+Moreover, the excerpts do not provide the absolute revenue for energy generation and storage for 2022 or 2024 directly.
+
+Wait — in the FY2022 10-K, there is a table:
+
+Gross profit energy generation and storage segment: $288 million  
+Gross margin: 7.4%
+
+So revenue = gross profit / gross margin = 288 / 0.074 = $3,891.89 million ≈ $3.892 billion
+
+But earlier we calculated $3.92 billion from the growth rate.
+
+There's a discrepancy.
+
+Which one is correct?
+
+From growth rate: 2022 revenue = $3.92 billion  
+From gross profit and margin: $288 million / 7.4% = $3,891.89 million = $3.892 billion
+
+$3.92 billion vs $3.892 billion — difference of $28 million.
+
+This suggests inconsistency or rounding.
+
+But the growth rate method: increase of $1.12 billion, 40% growth.
+
+So 2021 revenue = 1.12 / 0.4 = $2.8 billion  
+2022 revenue = $3.92 billion
+
+But gross margin is 7.4% on $3.92 billion → gross profit = 0.074 * 3.92 = $290.08 million, but reported gross profit is $288 million.
+
+Close, likely due to rounding.
+
+Similarly, reported gross profit is $288 million, margin 7.4%, so revenue = 288 / 0.074 = 3,891.89 million.
+
+But the $1.12 billion increase is stated, so probably the $3.92 billion is intended.
+
+But we have two different calculations.
+
+The problem says ""use ONLY the excerpts"", so we must use what is given.
+
+The excerpt says: ""Energy generation and storage revenue increased $1.12 billion, or 40%, in the year ended December 31, 2022""
+
+So the increase is $1.12 billion, and it's 40% of 2021 revenue.
+
+So 2022 revenue = 2021 revenue + 1.12 = (1.12 / 0.4) + 1.12 = 2.8 + 1.12 = $3.92 billion
+
+This is derived from the text.
+
+For 2024, similarly, increase of $4.05 billion, 67% growth, so 2023 revenue = 4.05 / 0.67 = $6.044776 billion, 2024 revenue = $10.094776 billion
+
+But is there a direct figure?
+
+In the FY2024 10-K | Item 8, there is a table:
+
+""Depreciation and amortization included in Cost of revenues for the energy generation and storage segment for the years ended December 31, 2024, 2023 and 2022 was $377 million, $343 million and $331 million, respectively.""
+
+This is not revenue.
+
+And in the same document, Item 7 says the increase in revenue from 2023 to 2024 is $4.05 billion, 67%.
+
+But no absolute revenue is given.
+
+Similarly, for 2022, no absolute revenue is given, only the increase.
+
+So we must calculate.
+
+But the instruction says ""give exact figures"", so we can state the calculated values.
+
+However, the problem might expect us to recognize that the absolute revenue is not provided, only changes.
+
+But in financial filings, when they say ""increased by X, or Y%"", you can back into the base.
+
+And the question is about how it changed from 2022 to 2024.
+
+So we need to find 2022 revenue and 2024 revenue.
+
+From FY2022 10-K:
+- 2022 energy generation and storage revenue = 2021 revenue + $1.12 billion
+- 40% = $1.12 billion / 2021 revenue → 2021 revenue = $1.12 billion / 0.4 = $2.8 billion
+- So 2022 revenue = $2.8 billion + $1.12 billion = $3.92 billion
+
+From FY2024 10-K:
+- 2024 energy generation and storage revenue = 2023 revenue + $4.05 billion
+- 67% = $4.05 billion / 2023 revenue → 2023 revenue = $4.05 billion / 0.67 = $6.044776 billion
+- So 2024 revenue = $6.044776 billion + $4.05 billion = $10.094776 billion
+
+Now, change from 2022 to 2024: $10.094776 billion - $3.92 billion = $6.174776 billion
+
+But this is messy.
+
+Perhaps the filings do not contain the information because the absolute revenues are not stated, only changes.
+
+But the instruction allows for using the excerpts, and the changes are given, so we can derive.
+
+However, to be safe, let's see if there is any direct statement.
+
+In the FY2022 10-K, it says: ""In 2022, we deployed 6.5 GWh of energy storage products and 348 megawatts of solar energy systems."" But this is volume, not revenue.
+
+And ""recognized total revenues of $81.46 billion"" — total, not segment.
+
+So no direct revenue for the segment.
+
+Similarly, in FY2024, no direct revenue for the segment.
+
+Therefore, the provided filings do not contain the exact revenue figures for the energy generation and storage segment for 2022 and 2024; they only contain the year-over-year changes.
+
+So we cannot state the exact figures with certainty because they are not provided, only implied.
+
+The instruction says: ""If the excerpts do not contain the answer, reply exactly: 'The provided filings do not contain this information.'""
+
+Even though we can calculate, the exact revenue figures are not stated in the excerpts.
+
+For example, the 2022 revenue is not stated; only the increase is stated.
+
+Similarly for 2024.
+
+So perhaps the answer is that the information is not provided.
+
+But let's see if there's another way.
+
+In the FY2022 10-K, there is a table with ""Gross profit energy generation and storage segment $288"" and ""Gross margin 7.4%"", so revenue = 288 / 0.074 = 3,891.89 million.
+
+But is this exact? 7.4% might be rounded.
+
+Similarly, the $288 million might be rounded.
+
+But it's given as $288 million, and 7.4%, so we can use that.
+
+But the growth rate says $1.12 billion increase, 40%, which implies $3.92 billion, which is different.
+
+So there's a conflict.
+
+Therefore, the filings contain inconsistent information or rounding, so we cannot determine the exact figure.
+
+Thus, the safest answer is that the provided filings do not contain this information.
+
+But let's check the FY2024 10-K for any revenue figure.
+
+In FY2024 10-K | Item 8, there is a table with ""Automotive"" and ""Energy generation and storage"" but the numbers are $9,988 and $2,029 for 2024, and $11,139 and $2,487 for 2023.
+
+But the table is under ""Depreciation and amortization"", and the note says: ""(2) Depreciation and amortization included in Cost of revenues for the energy generation and storage segment for the years ended December 31, 2024, 2023 and 2022 was $377 million, $343 million and $331 million, respectively.""
+
+But the table has $2,029 and $2,487 for energy generation and storage, which are not $377 and $343.
+
+So the table must be something else.
+
+Looking at the table:
+
+""December 31, 2024 December 31, 2023
+Automotive $ 9,988 $ 11,139
+Energy generation and storage 2,029 2,487
+Total $ 12,017 $ 13,626""
+
+And the note above is about depreciation, but the numbers don't match.
+
+The note says depreciation for energy generation and storage is $377 million in 2024, but the table shows $2,029 million.
+
+So the table is not for depreciation.
+
+The text before the table is cut off.
+
+In the excerpt: ""Note 18 – Restructuring and Other"" and then the table.
+
+But the table is likely for restructuring costs or something else.
+
+The note says: ""Depreciation and amortization included in Cost of revenues for the energy generation and storage segment for the years ended December 31, 2024, 2023 and 2022 was $377 million, $343 million and $331 million, respectively.""
+
+Then it says: ""The following table presents revenues by geographic area..."" but that doesn't match the table.
+
+The table has Automotive and Energy generation and storage, not geographic.
+
+So the table is probably for something else.
+
+In the text: ""Note 18 – Restructuring and Other"" and then the table with numbers.
+
+And the numbers are in millions, and for 2024, energy generation and storage is $2,029 million.
+
+But is this revenue? The table is not labeled.
+
+The only label is from the note above, but it's about depreciation.
+
+Perhaps the table is for cost of revenues.
+
+In the FY2024 10-K | Item 8, it says: ""Depreciation and amortization included in Cost of revenues for the energy generation and storage segment for the years ended December 31, 2024, 2023 and 2022 was $377 million, $343 million and $331 million, respectively.""
+
+Then it says: ""The following table presents revenues by geographic area..."" but then the table has Automotive and Energy generation and storage, which is not geographic.
+
+So there's a disconnect.
+
+Perhaps the table is for cost of revenues.
+
+In the FY2022 10-K, there is a section on cost of revenues.
+
+In FY2024 10-K | Item 7: ""Cost of energy generation and storage revenue increased $2.55 billion, or 52%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023""
+
+So if we let C2023 = cost in 2023, then C2024 = C2023 + 2.55, and (2.55 / C2023) = 0.52, so C2023 = 2.55 / 0.52 = $4.903846 billion, C2024 = $7.453846 billion
+
+But in the table, energy generation and storage is $2,029 million for 2024, which is $2.029 billion, not $7.45 billion.
+
+So not cost.
+
+Perhaps the table is for something else.
+
+The note is ""Note 18 – Restructuring and Other"", so the table is likely for restructuring costs.
+
+And the numbers are small: $2,029 million for energy generation and storage in 2024, but that seems large for restructuring.
+
+$2.029 billion in restructuring costs for one segment? Unlikely.
+
+Perhaps it's a different table.
+
+Given the confusion, and since the table is not clearly labeled in the excerpt, we should not use it.
+
+Therefore, the only information is the year-over-year changes.
+
+So for the change from 2022 to 2024, we need the absolute values, which are not provided.
+
+Thus, the provided filings do not contain this information.
+
+Answer: The provided filings do not contain this information.",0.5,0.0,1,1,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+C,semantic,False,39,multi_year,filing,False,How did Tesla's total revenues change from fiscal 2017 to fiscal 2018?,"Total revenues grew from $11,758,751 thousand (about $11.76 billion) in 2017 to $21,461,268 thousand (about $21.46 billion) in 2018.","Tesla's total revenues increased from $11,758,751 thousand in fiscal 2017 to $21,461,268 thousand in fiscal 2018, representing an increase of $9,702,517 thousand, or 82%.",1.0,1.0,5,5,FY2017 Item 8; FY2017 Item 8; FY2017 Item 7; FY2017 Item 7; FY2017 Item 7; FY2018 Item 8; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7
+C,semantic,False,40,multi_year,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2023 compared with the end of 2024?,Tesla had $29.09 billion at the end of 2023 and $36.56 billion at the end of 2024.,"At the end of 2023, Tesla had $29.09 billion in cash and cash equivalents and investments.  
+At the end of 2024, Tesla had $36.56 billion in cash and cash equivalents and investments.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+C,semantic,False,41,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2018?,"In 2018 Tesla produced 254,530 vehicles and delivered 245,506 vehicles.","Tesla produced 254,530 vehicles and delivered 245,506 vehicles in 2018.",1.0,1.0,5,5,FY2018 Item 7; FY2018 Item 1; FY2018 Item 1A; FY2018 Item 7; FY2018 Item 7
+C,semantic,False,42,lookup,filing,False,How much bitcoin did Tesla purchase in 2021?,During 2021 Tesla purchased an aggregate of $1.50 billion in bitcoin.,Tesla purchased $1.50 billion of bitcoin in 2021.,1.0,1.0,5,5,FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 8; FY2021 Item 7
+C,semantic,False,43,lookup,filing,False,How many full-time employees did Tesla and SolarCity each have at the end of 2016?,"As of December 31, 2016, Tesla had 17,782 full-time employees and SolarCity Corporation had 12,243.","Tesla had 17,782 full-time employees and SolarCity had 12,243 full-time employees as of December 31, 2016.",1.0,1.0,5,5,FY2016 Item 1; FY2016 Item 9A; FY2016 Item 8; FY2016 Item 8; FY2016 Item 2
+C,semantic,False,44,unanswerable,filing,False,How many vehicles did Tesla deliver in 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14).,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 11; FY2025 Item 12; FY2025 Item 13; FY2025 Item 11
+C,semantic,False,45,unanswerable,filing,False,What was Tesla's gross margin in fiscal 2025?,The provided filings do not contain this information: the FY2025 10-K/A in the corpus has no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 14
+C,semantic,False,46,lookup,casual,True,how many cars did tesla sell in 2024?,"Tesla delivered approximately 1,789,000 consumer vehicles in 2024 (and produced approximately 1,773,000).","Tesla delivered approximately 1,789,000 consumer vehicles in 2024.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,47,lookup,casual,False,how many people worked at tesla at the end of 2024?,"Tesla's worldwide employee headcount was 125,665 as of December 31, 2024.","As of December 31, 2024, Tesla's employee headcount worldwide was 125,665.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+C,semantic,False,48,lookup,casual,False,did tesla make money in 2020?,"Yes. Net income attributable to common stockholders was $721 million in 2020, after a net loss of $862 million in 2019.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8
+C,semantic,False,49,lookup,casual,False,how much money did tesla bring in in 2022?,"Tesla's total revenues were $81,462 million (about $81.5 billion) in 2022.","Tesla brought in $81,462 million in total revenues in 2022.",1.0,1.0,5,5,FY2022 Item 8; FY2022 Item 8; FY2022 Item 7; FY2022 Item 8; FY2022 Item 8
+C,semantic,False,50,lookup,casual,False,how big was tesla's battery and solar business in 2024?,"The energy generation and storage segment had revenue of $10,086 million in 2024, up 67% from $6,035 million in 2023.","Tesla's battery and solar business, referred to as ""Energy generation and storage,"" had a revenue increase of $4.05 billion, or 67%, in the year ended December 31, 2024, compared to the prior year. In 2024, Tesla deployed 31.4 GWh of energy storage products, primarily driven by increases in Megapack and Powerwall deployments. The cost of energy generation and storage revenue increased by $2.55 billion, or 52%, during the same period.",0.0,0.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,51,lookup,casual,False,how much cash did tesla have sitting around at the end of 2023?,Tesla ended 2023 with $29.09 billion in cash and cash equivalents and investments.,Tesla had $16.398 billion in cash and cash equivalents at the end of 2023.,0.0,1.0,2,5,FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8
+C,semantic,False,52,lookup,casual,False,how many cars did tesla make in 2023?,"Tesla produced 1,845,985 consumer vehicles in 2023.","Tesla produced 1,845,985 consumer vehicles in 2023.",1.0,1.0,5,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7
+C,semantic,False,53,lookup,casual,False,how much did tesla spend on r&d in 2022?,"Research and development expense was $3,075 million in 2022, up 19% from $2,593 million in 2021.","Tesla spent $3,075 million on research and development in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7
+C,semantic,False,54,lookup,casual,False,how much of tesla does elon own?,"According to the fiscal 2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","Based on the FY2025 10-K/A filing, Elon Musk beneficially owns 413,152,109 shares held by the Elon Musk Revocable Trust dated July 22, 2003, plus 303,960,630 shares issuable to Mr. Musk, for a total of 717,112,739 shares. This ownership is reported as of the date of the filing, and the total outstanding shares of Tesla’s common stock are 3,752,191,774. Therefore, Elon Musk's beneficial ownership totals 717,112,739 shares of Tesla common stock as of the FY2025 filing.",0.0,0.0,2,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 10; FY2025 Item 12; FY2025 Item 13
+C,semantic,False,55,narrative,casual,False,did tesla get fined by the sec over musk saying he'd take tesla private?,"Yes. Under the 2018 SEC settlement, Tesla and Elon Musk each paid a civil penalty of $20 million, and an independent director was appointed Chair of the Board.","Yes, Tesla was fined by the SEC in connection with Elon Musk's statement about taking Tesla private. As stated in the FY2018 10-K, a settlement with the SEC was approved by the U.S. District Court on October 16, 2018, related to the actions taken by the SEC regarding Musk’s August 7, 2018 Twitter post. Under the settlement, Tesla agreed to pay a $20 million penalty. This is consistent with public disclosures, though the exact dollar amount is not included in the provided excerpts. However, based solely on the provided excerpts, the recognition of a settlement and legal expense related to the matter is confirmed, but the specific fine amount is not stated.
+
+Therefore: The provided filings do not contain this information.",1.0,0.0,4,2,FY2018 Item 8; FY2018 Item 8; FY2018 Item 8; FY2018 Item 8; FY2018 Item 7
+C,semantic,False,56,definition,casual,True,what does tesla mean by cash deliveries?,"Cash deliveries are deliveries of new vehicles sold for cash or with financing, i.e. vehicles that are not subject to lease accounting; their revenue is recorded as automotive sales revenue rather than automotive leasing revenue.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 5; FY2024 Item 8; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1A
+C,semantic,False,57,definition,casual,False,what are tesla's regulatory credits and who buys them?,Automotive regulatory credits revenue comes from selling regulatory credits to other automotive manufacturers; it is directly related to Tesla's new vehicle production and sales.,"Tesla earns tradable regulatory credits under various regulations related to zero-emission vehicles (ZEVs), greenhouse gas, fuel economy, and clean fuel. These credits are sold to other regulated entities who can use them to comply with emission standards and other regulatory requirements.",0.0,1.0,4,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 1A; FY2024 Item 1; FY2024 Item 8
+C,semantic,False,58,definition,casual,False,what counts as automotive leasing revenue for tesla?,"Automotive leasing revenue includes the amortization of revenue for vehicles under direct operating lease agreements, plus direct sales-type leasing programs where all revenue is recognized upon delivery to the customer.","Automotive leasing revenue for Tesla includes:
+- The amortization of revenue for vehicles under direct operating lease agreements.
+- Revenue from direct sales-type leasing programs, where all revenue associated with the sales-type lease is recognized upon delivery of the vehicle to the customer.
+- Interest income based on the implicit rate in the lease, which is recorded to automotive leasing revenue over time.
+
+This information is based on the FY2024 10-K filings.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,59,definition,casual,False,what's included in tesla's services and other revenue?,"Services and other revenue consists of sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue and retail merchandise sales.","Tesla's Services and Other Revenue includes sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue, and retail merchandise sales. This information is from the FY2024 10-K filing.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 1; FY2024 Item 7
+C,semantic,False,60,definition,casual,False,what does tesla make at its buffalo factory?,"According to the fiscal 2017 10-K, Gigafactory 2 in Buffalo, New York produces PV (solar) cells and panels, with Panasonic as manufacturing partner and supplier.","Tesla manufactures solar products at its factory in Buffalo, New York (Gigafactory 2).",0.5,1.0,4,5,FY2017 Item 1; FY2017 Item 1; FY2017 Item 1; FY2017 Item 1; FY2017 Item 1
+C,semantic,False,61,definition,casual,False,how does tesla deal with hackers and cyber attacks?,"Per the fiscal 2023 10-K, Tesla runs privacy and cybersecurity reviews, penetration testing with external tools, a bug bounty program and employee training, and has a four-stage incident response process: preparation, detection and analysis, containment/eradication/recovery, and post-incident analysis.","Tesla deals with hackers and cyber attacks by implementing a comprehensive cybersecurity risk management and strategy process. This includes the operation of an incident response plan, where security events and data incidents are evaluated, ranked by severity, and prioritized for response and remediation. Incidents are assessed for materiality, operational and business impact, and privacy impact. Tesla conducts tabletop exercises to simulate responses to cybersecurity incidents and has a team of cybersecurity professionals who collaborate with technical and business stakeholders across business units to analyze risks and implement detection, mitigation, and remediation measures. Cybersecurity incidents are reported to the Audit Committee as appropriate. These activities are part of Tesla's ongoing efforts to prevent, detect, and remediate cybersecurity incidents (FY2023 10-K | Item 1C).",0.3333333333333333,0.3333333333333333,2,5,FY2023 Item 3; FY2023 Item 1C; FY2023 Item 1C; FY2023 Item 8; FY2023 Item 8
+C,semantic,False,62,reasoning,casual,True,did tesla make a profit in 2024 after capex?,"Yes. Net income attributable to common stockholders was $7,091 million in 2024, and operating cash flow of $14.92 billion exceeded capital expenditures of $11.34 billion, leaving about $3.58 billion of free cash flow.","To determine if Tesla made a profit in 2024 after capital expenditures (capex), we need to analyze net income and capex from the provided excerpts.
+
+From the FY2024 10-K | Item 8 Consolidated Statements of Operations:
+- Net income in 2024 = $7,153 million ($7.153 billion)
+
+From the FY2024 10-K | Item 8 Consolidated Statements of Cash Flows:
+- Purchases of property and equipment (capex), net of sales = $11,339 million ($11.339 billion)
+
+Net income represents profit before capex, as capex is an investing activity and not subtracted in the calculation of net income. However, to assess profit after capex, we compare net income to capex.
+
+Tesla’s net income in 2024 was $7,153 million, while capex was $11,339 million. Since capex exceeds net income, Tesla did not generate enough net income to cover its capital expenditures.
+
+Answer: No, Tesla did not make a profit in 2024 after capex, as its capex ($11.339 billion) exceeded its net income ($7.153 billion).",0.5,1.0,1,2,FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 5
+C,semantic,False,63,reasoning,casual,False,why did tesla's car sales revenue drop in 2024?,"Automotive sales revenue fell $6.03 billion (8%), primarily due to lower average selling prices driven by overall price reductions and attractive financing options, plus about 22,000 fewer combined Model 3 and Model Y cash deliveries; this was partly offset by about 19,000 more deliveries of other models (mainly Cybertruck).","Tesla's automotive sales revenue dropped in 2024 primarily due to lower average selling prices on its vehicles, driven by overall price reductions and attractive financing options provided in 2024.",0.5,0.5,2,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+C,semantic,False,64,reasoning,casual,False,is tesla's energy business growing faster than its car business?,"Yes, in 2024: energy generation and storage segment revenue grew 67%, while total automotive revenues fell 6% (from $82,419 million to $77,070 million).",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1
+C,semantic,False,65,reasoning,casual,False,was 2024 a better or worse year than 2023 for tesla's profits?,"Worse: net income attributable to common stockholders fell from $14,997 million in 2023 to $7,091 million in 2024, roughly halving.","2024 was a worse year than 2023 for Tesla's profits. 
+
+Tesla's net income decreased from $14,974 million in 2023 to $7,153 million in 2024, as reported in the Consolidated Statements of Operations. Additionally, income from operations declined from $8,891 million in 2023 to $7,076 million in 2024. These figures indicate a significant drop in profitability in 2024 compared to 2023.",0.0,0.0,4,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+C,semantic,False,66,reasoning,casual,False,did tesla hire more people or cut jobs in 2024?,"Tesla's worldwide headcount fell from 140,473 at the end of 2023 to 125,665 at the end of 2024.","Tesla hired more people in 2024. As of December 31, 2024, Tesla's worldwide employee headcount was 125,665. Additionally, in 2024, Tesla hired trainees across North America, EMEA, and APAC, expanded the Tesla START program to 14 campuses, and hired over 400 technicians through that program. Over 13,000 employees also advanced their careers within the company in 2024. These actions indicate job growth rather than job cuts.",0.5,0.5,1,2,FY2023 Item 1; FY2023 Item 1; FY2023 Item 1; FY2023 Item 1; FY2023 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+C,semantic,False,67,multi_year,casual,False,how much did tesla's car deliveries grow from 2018 to 2021?,"Deliveries grew from 245,506 vehicles in 2018 to 936,222 in 2021, almost a fourfold increase.",The provided filings do not contain this information.,0.0,0.5,1,1,FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 1A; FY2018 Item 7; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
+D,semantic,True,1,lookup,filing,False,What were Tesla's total revenues for fiscal year 2023?,"Total revenues were $96,773 million in 2023, up from $81,462 million in 2022.","Tesla's total revenues for fiscal year 2023 were $96,773 million.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8
+D,semantic,True,2,lookup_units,filing,False,What were Tesla's total revenues in fiscal 2017?,"Total revenues were $11,758,751 thousand (about $11.76 billion) in 2017.","Tesla's total revenues in fiscal 2017 were $11,758,751,000.",1.0,1.0,5,5,FY2017 Item 7; FY2017 Item 8; FY2017 Item 7; FY2017 Item 7; FY2017 Item 8
+D,semantic,True,3,lookup,filing,False,What was Tesla's net income attributable to common stockholders in fiscal 2024?,"Net income attributable to common stockholders was $7,091 million in 2024, down from $14,997 million in 2023.","Tesla's net income attributable to common stockholders in fiscal 2024 was $7,091 million.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+D,semantic,True,4,unanswerable,filing,False,What was Tesla's total revenue for fiscal year 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14) and contains no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 11
+D,semantic,True,5,lookup,filing,False,"What was Tesla's net income attributable to common stockholders in 2020, and how did it compare with 2019?","Net income attributable to common stockholders was $721 million in 2020, compared with a net loss of $862 million in 2019.","Tesla's net income attributable to common stockholders in 2020 was $721 million. This represented a favorable change of $1.58 billion compared to 2019, when the net loss attributable to common stockholders was $862 million.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 7; FY2020 Item 8; FY2020 Item 8; FY2020 Item 8
+D,semantic,True,6,lookup,filing,False,How many consumer vehicles did Tesla produce and deliver in 2023?,"In 2023 Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.","In 2023, Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2023 Item 1; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7
+D,semantic,True,7,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2021?,"In 2021 Tesla produced 930,422 vehicles and delivered 936,222 vehicles.","In 2021, Tesla produced 930,422 vehicles and delivered 936,222 vehicles.",1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 7; FY2021 Item 1A; FY2021 Item 8; FY2021 Item 1
+D,semantic,True,8,lookup,filing,False,How many total vehicles did Tesla deliver and produce in 2019?,"In 2019 Tesla achieved annual delivery and production records of 367,656 and 365,232 total vehicles, respectively.","Tesla delivered 367,656 total vehicles and produced 365,232 total vehicles in 2019.",1.0,1.0,5,5,FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 7; FY2019 Item 8
+D,semantic,True,9,lookup,filing,False,"How many Model 3 vehicles did Tesla deliver in 2017, and how many Model S and Model X vehicles?","In 2017 Tesla delivered 101,420 Model S and Model X vehicles and 1,764 Model 3 vehicles.","Tesla delivered 1,764 Model 3 vehicles and 101,420 Model S and Model X vehicles in 2017.",1.0,1.0,5,5,FY2017 Item 7; FY2017 Item 7; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 8
+D,semantic,True,10,lookup,filing,False,How many full-time employees did Tesla have at the end of 2018?,"As of December 31, 2018, Tesla had 48,817 full-time employees.","As of December 31, 2018, Tesla, Inc. had 48,817 full-time employees.",1.0,1.0,5,5,FY2018 Item 1; FY2018 Item 8; FY2018 Item 6; FY2018 Item 1; FY2018 Item 8
+D,semantic,True,11,lookup,filing,False,"How much did Tesla spend on research and development in 2024, and how did that compare with 2023?","Research and development expense was $4,540 million in 2024 versus $3,969 million in 2023, an increase of $571 million (14%).","Tesla spent $4,540 million on research and development in 2024, which is an increase of $571 million, or 14%, compared to $3,969 million in 2023.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,12,lookup,filing,False,"What was revenue from Tesla's energy generation and storage segment in 2024, and how much did it grow?","Energy generation and storage segment revenue was $10,086 million in 2024, up $4,051 million or 67% from $6,035 million in 2023.","To determine the revenue from Tesla's energy generation and storage segment in 2024 and its growth:
+
+1. From the excerpt: ""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023...""
+
+   This indicates that the year-over-year increase in revenue was $4.05 billion, representing 67% growth.
+
+2. To find the 2024 revenue, we need the 2023 revenue. Let:
+   - 2023 revenue = X
+   - Then, X * 0.67 = $4.05 billion
+   - So, X = $4.05 billion / 0.67 ≈ $6.044776 billion
+
+   Therefore, 2023 revenue ≈ $6.045 billion
+
+3. 2024 revenue = 2023 revenue + increase = $6.045 billion + $4.05 billion = $10.095 billion
+
+Alternatively, we can verify this using the deployment data and context, but no direct revenue figure for the segment is explicitly stated.
+
+However, the only direct financial figures related to the energy generation and storage segment are:
+- Revenue increase: $4.05 billion (67%) in 2024 vs. 2023
+- Depreciation and amortization for the segment in 2024: $377 million
+
+No exact revenue figure for the energy generation and storage segment in 2024 is explicitly provided in the excerpts.
+
+But we can infer:
+If revenue increased by $4.05 billion, or 67%, then:
+Let R be 2023 revenue.
+1.67R = R + $4.05 billion  
+0.67R = $4.05 billion  
+R = $4.05 billion / 0.67 ≈ $6.044776 billion
+
+Then 2024 revenue = $6.044776 billion + $4.05 billion = $10.094776 billion ≈ $10.09 billion
+
+But is there an exact figure stated?
+
+Wait — the excerpt says: ""In 2024, we recognized total revenues of $97.69 billion...""
+
+That is total company revenue, not energy segment revenue.
+
+No excerpt explicitly states the dollar amount of energy generation and storage revenue in 2024.
+
+But the first excerpt says: ""Energy generation and storage revenue increased $4.05 billion, or 67%, in the year ended December 31, 2024 as compared to the year ended December 31, 2023...""
+
+From this, we can calculate:
+Let 2023 revenue = X  
+Then: X * 0.67 = 4.05 → X = 4.05 / 0.67 = $6.044776 billion  
+So 2024 revenue = X + 4.05 = $6.044776 + 4.05 = $10.094776 billion
+
+Rounded, this is approximately $10.09 billion.
+
+But the question asks for exact figures.
+
+Is there an exact revenue figure provided?
+
+Looking again: The only numbers are:
+- Increase: $4.05 billion
+- Growth: 67%
+- Depreciation: $377 million (2024)
+- No exact revenue number is stated.
+
+But we can derive it exactly if we accept the math.
+
+However, the instruction says: ""Give exact figures with units and the fiscal year they refer to.""
+
+We are not told to calculate — only to use the excerpts.
+
+The excerpts do not state the 2024 energy generation and storage revenue directly.
+
+They only state the increase: $4.05 billion, or 67%.
+
+Therefore, without the base or the resulting revenue explicitly stated, and since we are not to calculate unless the number is given, we must conclude:
+
+The provided filings do not contain this information.",1.0,0.5,2,2,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,13,lookup,filing,False,"Did Tesla's total automotive revenues increase or decrease in 2024 compared to 2023, and by how much?","Total automotive revenues decreased by $5,349 million (6%), from $82,419 million in 2023 to $77,070 million in 2024.","Tesla's total automotive revenues decreased in 2024 compared to 2023. The decrease was $6.03 billion, or 8%, primarily due to lower average selling prices on vehicles driven by price reductions and attractive financing options provided in 2024. Additionally, automotive leasing revenue decreased by $293 million, or 14%. These decreases were partially offset by an increase of $596 million in FSD (Supervised) revenue and a $973 million increase in automotive regulatory credits revenue. However, the overall trend for total automotive revenues was a decrease.",0.0,0.0,2,2,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,14,lookup,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2024?,"Tesla ended 2024 with $36.56 billion in cash and cash equivalents and investments, an increase of $7.47 billion from the end of 2023.",Tesla had $36.56 billion in cash and cash equivalents and investments at the end of 2024.,1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8
+D,semantic,True,15,lookup,filing,False,"What was the fair market value of Tesla's bitcoin holdings at the end of 2021, and what gains did Tesla realize from selling bitcoin that year?","The fair market value of Tesla's bitcoin holdings as of December 31, 2021 was $1.99 billion; Tesla realized gains of $128 million from selling a portion of its holdings in March 2021.",The fair market value of Tesla's bitcoin holdings at the end of 2021 was $1.99 billion. Tesla realized gains of $128 million from selling a portion of its bitcoin holdings in 2021.,1.0,1.0,5,5,FY2021 Item 7; FY2021 Item 8; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7
+D,semantic,True,16,multi_year,filing,False,How did Tesla's total revenues change between fiscal 2019 and fiscal 2023?,"Total revenues grew from $24,578 million in 2019 to $96,773 million in 2023, roughly a fourfold increase.","Tesla's total revenues increased from $24,578 million in fiscal 2019 to $96,773 million in fiscal 2023. This represents an increase of $72,195 million over the period.",1.0,1.0,5,5,FY2019 Item 8; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 7; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 7
+D,semantic,True,17,multi_year,filing,False,"What was Tesla's net income attributable to common stockholders in each of 2022, 2023 and 2024?","Net income attributable to common stockholders was $12,556 million in 2022, $14,997 million in 2023 and $7,091 million in 2024.","Tesla's net income attributable to common stockholders was:
+- $12,556 million in 2022,
+- $14,997 million in 2023,
+- $7,091 million in 2024.",1.0,1.0,5,5,FY2022 Item 8; FY2022 Item 8; FY2022 Item 7; FY2022 Item 8; FY2022 Item 5; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,18,lookup_units,filing,False,"What fees did PricewaterhouseCoopers bill Tesla in 2025, in total and for audit fees?","PwC billed total fees of $18,070 thousand in 2025, including audit fees of $16,485 thousand (2024: total $17,923 thousand, audit $15,634 thousand).","In 2025, PricewaterhouseCoopers billed Tesla a total of $18,070,000, of which $16,485,000 were audit fees.",1.0,1.0,5,5,FY2025 Item 14; FY2025 Item 13; FY2025 Item 14; FY2025 Item 13; FY2025 Item 13
+D,semantic,True,19,narrative,filing,False,What are the stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K?,"Tesla's incident response and breach management process has four stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication and recovery, and 4) post-incident analysis.","The stages of Tesla's cybersecurity incident response process described in its fiscal 2023 10-K are:  
+1) Preparation for a cybersecurity incident,  
+2) Detection and analysis of a security incident,  
+3) Containment, eradication and recovery, and  
+4) Post-incident.",1.0,1.0,4,5,FY2023 Item 1C; FY2023 Item 7; FY2023 Item 1C; FY2023 Item 7; FY2023 Item 3
+D,semantic,True,20,narrative,filing,False,"According to Tesla's fiscal 2024 risk factors, which individual is Tesla highly dependent on, and what are his roles?","Tesla states it is highly dependent on the services of Elon Musk, Technoking of Tesla and its Chief Executive Officer.","According to Tesla's fiscal 2024 risk factors, Tesla is highly dependent on Elon Musk, who serves as Technoking of Tesla and Chief Executive Officer.",1.0,1.0,5,5,FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1
+D,semantic,True,21,narrative,filing,False,When did Tesla complete its acquisition of SolarCity?,"Tesla's acquisition of SolarCity Corporation closed on November 21, 2016.","Tesla completed its acquisition of SolarCity on November 21, 2016.",1.0,1.0,5,5,FY2016 Item 7; FY2016 Item 8; FY2016 Item 9A; FY2016 Item 7; FY2016 Item 6
+D,semantic,True,22,narrative,filing,False,What did Tesla and Elon Musk agree to in the 2018 SEC settlement over his statement about taking Tesla private?,"Tesla and Mr. Musk each paid a civil penalty of $20 million; an independent director was appointed Chair of the Board (to serve for at least three years), two additional independent directors were appointed, and Tesla enhanced its disclosure controls and other corporate governance matters.","In the 2018 SEC settlement over Elon Musk's statement about taking Tesla private, Tesla agreed to pay a civil penalty of $20 million, appoint an independent director as the Chair of the Board, appoint two additional independent directors to the Board, and make further enhancements to its internal controls and procedures. Elon Musk, without admitting or denying the SEC’s allegations, also agreed to step down as Chairman of the Board for at least three years and was subject to certain restrictions regarding his communications about Tesla.",1.0,1.0,2,2,FY2018 Item 7; FY2018 Item 8; FY2018 Item 1A; FY2018 Item 8; FY2018 Item 8
+D,semantic,True,23,narrative,filing,False,"According to the fiscal 2017 risk factors, who is Tesla's manufacturing partner and supplier for lithium-ion cells, and at which factory?","Tesla signed long-term agreements with Panasonic to be its manufacturing partner and supplier for lithium-ion cells at Gigafactory 1 in Nevada (and for PV cells and panels at Gigafactory 2 in Buffalo, New York).","According to the fiscal 2017 risk factors, Tesla's manufacturing partner and supplier for lithium-ion cells is Panasonic, and this partnership is at Gigafactory 1 in Nevada.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 1A; FY2017 Item 1A
+D,semantic,True,24,narrative,filing,False,"Which board committee oversees Tesla's cybersecurity risks according to the fiscal 2024 10-K, and how often does it receive updates?","The Audit Committee is responsible for oversight of risks from cybersecurity threats, and its members receive updates on a quarterly basis from senior management.","According to the fiscal 2024 10-K, Tesla's Audit Committee oversees cybersecurity risks. The Audit Committee receives updates on a quarterly basis from senior management, including leaders from Information Security, Product Security, Compliance, and Legal teams.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1C; FY2024 Item 1C; FY2024 Item 7; FY2024 Item 1C
+D,semantic,True,25,narrative,filing,False,What is Tesla's dividend policy as described in its fiscal 2024 10-K?,Tesla has never declared or paid cash dividends on its common stock and does not anticipate paying any cash dividends in the foreseeable future.,The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,26,narrative,filing,False,"What did the Delaware Court of Chancery decide about Elon Musk's 2018 CEO Performance Award, and when, according to the fiscal 2024 10-K?","On January 30, 2024, the Court issued an opinion finding that the 2018 CEO Performance Award should be rescinded.","The Delaware Court of Chancery issued an opinion on January 30, 2024, finding that Elon Musk's 2018 CEO Performance Award should be rescinded.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+D,semantic,True,27,narrative,filing,False,"What groundwork for future growth did Tesla lay in 2019, according to its fiscal 2019 10-K?","Tesla commenced Model 3 production at Gigafactory Shanghai, prepared the Fremont Factory for Model Y production (which commenced in the first quarter of 2020), selected Berlin, Germany as the site of its next factory for Europe, and unveiled Cybertruck.","According to Tesla's fiscal 2019 10-K, the groundwork for future growth laid in 2019 included the establishment and/or increases of Model 3 and Model Y production capacity at the Fremont Factory and at Gigafactory Shanghai, the continued expansion of Gigafactory Nevada, the construction of Gigafactory Berlin, the manufacturing ramp of the Solar Roof at Gigafactory New York, and the continued expansion of Tesla's retail and service locations, body shops, Mobile Service fleet, and Supercharger network.",0.75,0.75,2,5,FY2019 Item 1A; FY2019 Item 7; FY2019 Item 8; FY2019 Item 7; FY2019 Item 6
+D,semantic,True,28,narrative,filing,False,Which vehicle models were in active production at Gigafactory Texas according to the fiscal 2023 10-K?,Gigafactory Texas had Model Y and Cybertruck in active production.,"According to the FY2023 10-K, the vehicle models in active production at Gigafactory Texas were Model Y and Cybertruck.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 7; FY2023 Item 1; FY2023 Item 7; FY2023 Item 2
+D,semantic,True,29,lookup,filing,False,"How many Tesla shares did Elon Musk beneficially own according to the fiscal 2025 10-K/A, and what percentage was that?","Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","According to the FY2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, which represented 20.3% of Tesla's outstanding common stock.",1.0,1.0,5,5,FY2025 Item 12; FY2025 Item 12; FY2025 Item 11; FY2025 Item 12; FY2025 Item 12
+D,semantic,True,30,narrative,filing,False,"According to the related person transactions in the fiscal 2025 10-K/A, what happened to xAI Holdings in February 2026?","On February 2, 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX.","In February 2026, xAI Holdings was acquired by and became a wholly owned subsidiary of SpaceX pursuant to a merger transaction.",0.5,1.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 13; FY2025 Item 11; FY2025 Item 13
+D,semantic,True,31,narrative,filing,False,When did Tesla start production at Gigafactory Berlin-Brandenburg?,Tesla started production at Gigafactory Berlin-Brandenburg close to the end of the first quarter of 2022.,Tesla started production at Gigafactory Berlin-Brandenburg closer to the end of the first quarter of 2022.,1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7
+D,semantic,True,32,multi_year,filing,False,How did Tesla's number of full-time employees change from the end of 2017 to the end of 2019?,"Tesla had 37,543 full-time employees at the end of 2017 and 48,016 at the end of 2019.","As of December 31, 2017, Tesla had 37,543 full-time employees. As of December 31, 2019, Tesla had 48,016 full-time employees. Therefore, the number of full-time employees increased by 10,473 from the end of 2017 to the end of 2019.",1.0,1.0,5,5,FY2017 Item 1; FY2017 Item 8; FY2017 Item 7; FY2017 Item 1A; FY2017 Item 7; FY2019 Item 1; FY2019 Item 8; FY2019 Item 8; FY2019 Item 8; FY2019 Item 7
+D,semantic,True,33,multi_year,filing,False,How did Tesla's worldwide employee count change between the end of 2020 and the end of 2024?,"Tesla's worldwide full-time employee count was 70,757 at the end of 2020 and its worldwide headcount was 125,665 at the end of 2024.",The provided filings do not contain this information.,0.0,0.5,1,1,FY2020 Item 8; FY2020 Item 8; FY2020 Item 1; FY2020 Item 7; FY2020 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 1; FY2024 Item 8; FY2024 Item 5
+D,semantic,True,34,multi_year,filing,False,"What was Tesla's worldwide headcount at the end of 2022, 2023 and 2024, and in which of those years did it fall?","Headcount was 127,855 at the end of 2022, 140,473 at the end of 2023 and 125,665 at the end of 2024, so it fell in 2024.",The provided filings do not contain this information.,0.0,0.3333333333333333,1,1,FY2022 Item 5; FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 1; FY2023 Item 1; FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+D,semantic,True,35,multi_year,filing,False,How many vehicles did Tesla deliver in 2020 compared with 2023?,"Tesla delivered 499,647 vehicles in 2020 and 1,808,581 consumer vehicles in 2023.","In 2020, Tesla delivered 499,647 vehicles. In 2023, Tesla delivered 1,808,581 consumer vehicles.",1.0,1.0,5,5,FY2020 Item 7; FY2020 Item 8; FY2020 Item 7; FY2020 Item 7; FY2020 Item 7; FY2023 Item 1; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 7
+D,semantic,True,36,multi_year,filing,False,How did Tesla's vehicle production change from 2021 to 2022?,"Tesla produced 930,422 vehicles in 2021 and 1,369,611 consumer vehicles in 2022.",The provided filings do not contain this information.,0.0,0.5,1,1,FY2021 Item 1A; FY2021 Item 8; FY2021 Item 1; FY2021 Item 1A; FY2021 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7; FY2022 Item 7
+D,semantic,True,37,multi_year,filing,False,How much did Tesla spend on research and development in 2016 compared with 2024?,"R&D expense was $834,408 thousand (about $834 million) in 2016 and $4,540 million in 2024.","In 2016, Tesla spent $834.4 million on research and development.  
+In 2024, Tesla spent $4,540 million ($4.54 billion) on research and development.",1.0,1.0,5,5,FY2016 Item 7; FY2016 Item 8; FY2016 Item 7; FY2016 Item 8; FY2016 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,38,multi_year,filing,False,How did revenue from Tesla's energy generation and storage segment change from 2022 to 2024?,"Energy generation and storage segment revenue grew from $3,909 million in 2022 to $10,086 million in 2024.","Revenue from Tesla's energy generation and storage segment increased from $3,909 million in 2022 to $10,086 million in 2024, an increase of $6,177 million, or 158%.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,39,multi_year,filing,False,How did Tesla's total revenues change from fiscal 2017 to fiscal 2018?,"Total revenues grew from $11,758,751 thousand (about $11.76 billion) in 2017 to $21,461,268 thousand (about $21.46 billion) in 2018.","Tesla's total revenues increased from $11,758,751 thousand in fiscal 2017 to $21,461,268 thousand in fiscal 2018. This represents an increase of $9,702,517 thousand.",1.0,1.0,5,2,FY2017 Item 8; FY2017 Item 7; FY2017 Item 7; FY2017 Item 7; FY2017 Item 8; FY2018 Item 8; FY2018 Item 7; FY2018 Item 8; FY2018 Item 8; FY2018 Item 7
+D,semantic,True,40,multi_year,filing,False,How much cash and cash equivalents and investments did Tesla have at the end of 2023 compared with the end of 2024?,Tesla had $29.09 billion at the end of 2023 and $36.56 billion at the end of 2024.,"At the end of 2023, Tesla had $29.09 billion in cash and cash equivalents and investments.  
+At the end of 2024, Tesla had $36.56 billion in cash and cash equivalents and investments.  
+
+These figures are stated in the ""Item 7"" sections of the FY2023 and FY2024 10-K filings.",1.0,1.0,5,5,FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8; FY2023 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,41,lookup,filing,False,How many vehicles did Tesla produce and deliver in 2018?,"In 2018 Tesla produced 254,530 vehicles and delivered 245,506 vehicles.","Tesla produced 254,530 vehicles and delivered 245,506 vehicles in 2018.",1.0,1.0,5,5,FY2018 Item 8; FY2018 Item 7; FY2018 Item 1A; FY2018 Item 1A; FY2018 Item 7
+D,semantic,True,42,lookup,filing,False,How much bitcoin did Tesla purchase in 2021?,During 2021 Tesla purchased an aggregate of $1.50 billion in bitcoin.,Tesla purchased an aggregate of $1.50 billion in bitcoin in 2021.,1.0,1.0,5,5,FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 8
+D,semantic,True,43,lookup,filing,False,How many full-time employees did Tesla and SolarCity each have at the end of 2016?,"As of December 31, 2016, Tesla had 17,782 full-time employees and SolarCity Corporation had 12,243.","Tesla had 17,782 full-time employees and SolarCity had 12,243 full-time employees as of December 31, 2016.",1.0,1.0,5,5,FY2016 Item 1; FY2016 Item 9A; FY2016 Item 1; FY2016 Item 8; FY2016 Item 9A
+D,semantic,True,44,unanswerable,filing,False,How many vehicles did Tesla deliver in 2025?,The provided filings do not contain this information: the FY2025 filing in the corpus is a 10-K/A covering only Part III (Items 10-14).,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11
+D,semantic,True,45,unanswerable,filing,False,What was Tesla's gross margin in fiscal 2025?,The provided filings do not contain this information: the FY2025 10-K/A in the corpus has no financial statements.,The provided filings do not contain this information.,1.0,0.0,5,5,FY2025 Item 13; FY2025 Item 13; FY2025 Item 11; FY2025 Item 11; FY2025 Item 11
+D,semantic,True,46,lookup,casual,True,how many cars did tesla sell in 2024?,"Tesla delivered approximately 1,789,000 consumer vehicles in 2024 (and produced approximately 1,773,000).","Tesla delivered approximately 1,789,000 consumer vehicles in 2024.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+D,semantic,True,47,lookup,casual,False,how many people worked at tesla at the end of 2024?,"Tesla's worldwide employee headcount was 125,665 as of December 31, 2024.","As of December 31, 2024, Tesla's employee headcount worldwide was 125,665.",1.0,1.0,5,5,FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+D,semantic,True,48,lookup,casual,False,did tesla make money in 2020?,"Yes. Net income attributable to common stockholders was $721 million in 2020, after a net loss of $862 million in 2019.","Yes, Tesla made money in 2020. The company reported a net income attributable to common stockholders of $721 million for the year ended December 31, 2020, as shown in the Consolidated Statements of Operations.",1.0,1.0,5,5,FY2020 Item 8; FY2020 Item 8; FY2020 Item 8; FY2020 Item 7; FY2020 Item 8
+D,semantic,True,49,lookup,casual,False,how much money did tesla bring in in 2022?,"Tesla's total revenues were $81,462 million (about $81.5 billion) in 2022.","Tesla brought in $81,462 million in total revenues in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 8; FY2022 Item 8; FY2022 Item 8; FY2022 Item 7
+D,semantic,True,50,lookup,casual,False,how big was tesla's battery and solar business in 2024?,"The energy generation and storage segment had revenue of $10,086 million in 2024, up 67% from $6,035 million in 2023.","Tesla's energy generation and storage revenue, which includes its battery and solar business, increased by $4.05 billion, or 67%, in the year ended December 31, 2024, compared to the prior year. This growth was primarily due to a 16.7 GWh increase in Megapack and Powerwall deployments. In 2024, Tesla deployed 31.4 GWh of energy storage products. The provided filings do not contain the exact total revenue figure for the battery and solar business in 2024.",0.0,0.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7
+D,semantic,True,51,lookup,casual,False,how much cash did tesla have sitting around at the end of 2023?,Tesla ended 2023 with $29.09 billion in cash and cash equivalents and investments.,"Tesla had $16,398 million in cash and cash equivalents at the end of 2023.",0.0,1.0,2,5,FY2023 Item 8; FY2023 Item 8; FY2023 Item 7; FY2023 Item 8; FY2023 Item 8
+D,semantic,True,52,lookup,casual,False,how many cars did tesla make in 2023?,"Tesla produced 1,845,985 consumer vehicles in 2023.","Tesla produced 1,845,985 consumer vehicles in 2023.",1.0,1.0,5,5,FY2023 Item 7; FY2023 Item 1; FY2023 Item 8; FY2023 Item 8; FY2023 Item 1
+D,semantic,True,53,lookup,casual,False,how much did tesla spend on r&d in 2022?,"Research and development expense was $3,075 million in 2022, up 19% from $2,593 million in 2021.","Tesla spent $3,075 million on research and development in 2022.",1.0,1.0,5,5,FY2022 Item 7; FY2022 Item 7; FY2022 Item 8; FY2022 Item 7; FY2022 Item 7
+D,semantic,True,54,lookup,casual,False,how much of tesla does elon own?,"According to the fiscal 2025 10-K/A, Elon Musk beneficially owned 717,112,739 shares, or 20.3% of Tesla's common stock.","Elon Musk owns 5% of Tesla's total issued and outstanding shares, as stated in the FY2025 10-K/A | Item 11 filing, based on the 2012 CEO Performance Award.",0.0,0.0,1,2,FY2025 Item 13; FY2025 Item 10; FY2025 Item 12; FY2025 Item 12; FY2025 Item 11
+D,semantic,True,55,narrative,casual,False,did tesla get fined by the sec over musk saying he'd take tesla private?,"Yes. Under the 2018 SEC settlement, Tesla and Elon Musk each paid a civil penalty of $20 million, and an independent director was appointed Chair of the Board.","Yes, Tesla was fined by the SEC. In connection with Elon Musk’s prior statement about considering taking Tesla private, Tesla entered into a settlement with the SEC. As part of the settlement, Tesla agreed to pay a $20 million penalty, as disclosed in the FY2018 10-K. The final judgment approving the settlement was entered on October 16, 2018.",1.0,0.0,5,2,FY2018 Item 8; FY2018 Item 8; FY2018 Item 8; FY2018 Item 7; FY2018 Item 1A
+D,semantic,True,56,definition,casual,True,what does tesla mean by cash deliveries?,"Cash deliveries are deliveries of new vehicles sold for cash or with financing, i.e. vehicles that are not subject to lease accounting; their revenue is recorded as automotive sales revenue rather than automotive leasing revenue.","Tesla refers to ""cash deliveries"" as deliveries of new vehicles where payment is received at the point control transfers, meaning when the vehicle is delivered to the customer and ownership is transferred. This is in contrast to financed sales, where payments are collected over the contractual loan term. The term ""cash deliveries"" implies that the customer pays for the vehicle upfront or through customary payment terms at the time of delivery, rather than through financing arrangements provided or arranged by Tesla.",0.5,1.0,1,2,FY2024 Item 7; FY2024 Item 8; FY2024 Item 1; FY2024 Item 5; FY2024 Item 7
+D,semantic,True,57,definition,casual,False,what are tesla's regulatory credits and who buys them?,Automotive regulatory credits revenue comes from selling regulatory credits to other automotive manufacturers; it is directly related to Tesla's new vehicle production and sales.,"Tesla's regulatory credits are tradable credits earned under various regulations related to zero-emission vehicles (ZEVs), greenhouse gas, fuel economy, and clean fuel. These credits are sold to other regulated entities, such as automotive manufacturers, who use them to comply with emission standards and other regulatory requirements.",0.0,1.0,5,5,FY2024 Item 1; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7; FY2024 Item 8
+D,semantic,True,58,definition,casual,False,what counts as automotive leasing revenue for tesla?,"Automotive leasing revenue includes the amortization of revenue for vehicles under direct operating lease agreements, plus direct sales-type leasing programs where all revenue is recognized upon delivery to the customer.","Automotive leasing revenue for Tesla includes revenue from direct vehicle leases to customers for up to 48 months, which is recorded on a straight-line basis over the contractual term for operating leases. It also includes revenue from sales-type leases, where revenue and costs are recognized upon delivery of the vehicle, and interest income based on the implicit rate in the lease is recorded over time. Additionally, revenue from lease buyouts contributes to automotive leasing revenue.",1.0,1.0,5,5,FY2024 Item 8; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,59,definition,casual,False,what's included in tesla's services and other revenue?,"Services and other revenue consists of sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue and retail merchandise sales.","Tesla's services and other revenue includes sales of used vehicles, non-warranty maintenance services and collision, part sales, paid Supercharging, insurance services revenue, and retail merchandise sales. This information is from the FY2024 10-K filing.",1.0,1.0,5,5,FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 7; FY2024 Item 8
+D,semantic,True,60,definition,casual,False,what does tesla make at its buffalo factory?,"According to the fiscal 2017 10-K, Gigafactory 2 in Buffalo, New York produces PV (solar) cells and panels, with Panasonic as manufacturing partner and supplier.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2017 Item 1; FY2017 Item 1A; FY2017 Item 1; FY2017 Item 7; FY2017 Item 1A
+D,semantic,True,61,definition,casual,False,how does tesla deal with hackers and cyber attacks?,"Per the fiscal 2023 10-K, Tesla runs privacy and cybersecurity reviews, penetration testing with external tools, a bug bounty program and employee training, and has a four-stage incident response process: preparation, detection and analysis, containment/eradication/recovery, and post-incident analysis.","Tesla deals with hackers and cyber attacks by maintaining information technology measures designed to protect against intellectual property theft, data breaches, sabotage, and other external or internal cyber attacks or misappropriation. The company's systems, however, are potentially vulnerable to various threats such as malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, and other cyber-attacks. In the event of a security incident involving unauthorized access, damage, or loss of data—including intellectual property and personal information—Tesla may need to comply with data breach notification laws, face litigation or regulatory investigations, undertake corrective actions, or verify the correctness of database contents, among other potential liabilities.",0.0,0.0,2,5,FY2023 Item 1A; FY2023 Item 1A; FY2023 Item 8; FY2023 Item 3; FY2023 Item 8
+D,semantic,True,62,reasoning,casual,True,did tesla make a profit in 2024 after capex?,"Yes. Net income attributable to common stockholders was $7,091 million in 2024, and operating cash flow of $14.92 billion exceeded capital expenditures of $11.34 billion, leaving about $3.58 billion of free cash flow.","To determine if Tesla made a profit in 2024 after capital expenditures (capex), we need to compare net income to capital expenditures.
+
+From the FY2024 10-K | Item 8, Consolidated Statements of Operations:
+- Net income in 2024 = $7.153 billion
+
+From the FY2024 10-K | Item 8, Consolidated Statements of Cash Flows:
+- Purchases of property and equipment (capex) in 2024 = $11.339 billion
+
+Net income ($7.153 billion) is less than capex ($11.339 billion). Therefore, after accounting for capex, Tesla did not have a positive cash flow from operations and investing activities combined.
+
+However, the question asks whether Tesla made a ""profit"" after capex. Profit typically refers to net income, which is calculated before capex. Capex is not subtracted in the calculation of net income. Thus, Tesla's net income of $7.153 billion represents a profit in 2024, regardless of capex.
+
+Answer: Yes, Tesla made a profit of $7.153 billion in 2024, as net income is reported before capex. Capex is an investing outflow, not an expense deducted in determining net income.",0.0,1.0,2,2,FY2024 Item 7; FY2024 Item 7; FY2024 Item 8; FY2024 Item 8; FY2024 Item 8
+D,semantic,True,63,reasoning,casual,False,why did tesla's car sales revenue drop in 2024?,"Automotive sales revenue fell $6.03 billion (8%), primarily due to lower average selling prices driven by overall price reductions and attractive financing options, plus about 22,000 fewer combined Model 3 and Model Y cash deliveries; this was partly offset by about 19,000 more deliveries of other models (mainly Cybertruck).","Tesla's automotive sales revenue decreased by $6.03 billion, or 8%, in the year ended December 31, 2024, compared to the year ended December 31, 2023, primarily due to lower average selling prices on its vehicles driven by overall price reductions and attractive financing options provided in 2024.",0.5,1.0,2,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,64,reasoning,casual,False,is tesla's energy business growing faster than its car business?,"Yes, in 2024: energy generation and storage segment revenue grew 67%, while total automotive revenues fell 6% (from $82,419 million to $77,070 million).",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1A; FY2024 Item 1; FY2024 Item 1
+D,semantic,True,65,reasoning,casual,False,was 2024 a better or worse year than 2023 for tesla's profits?,"Worse: net income attributable to common stockholders fell from $14,997 million in 2023 to $7,091 million in 2024, roughly halving.",The provided filings do not contain this information.,0.0,0.0,1,5,FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7; FY2024 Item 7
+D,semantic,True,66,reasoning,casual,False,did tesla hire more people or cut jobs in 2024?,"Tesla's worldwide headcount fell from 140,473 at the end of 2023 to 125,665 at the end of 2024.","Tesla hired more people in 2024. The company expanded several programs, including hiring over 800 graduates through the Manufacturing Development Program, over 400 technicians through the Tesla START program, and over 13,000 employees worldwide taking advantage of career advancement opportunities. Additionally, Tesla planned to hire over 1,000 participants in 2025, indicating continued growth.",0.0,0.0,1,2,FY2023 Item 1; FY2023 Item 1; FY2023 Item 8; FY2023 Item 7; FY2023 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1; FY2024 Item 1
+D,semantic,True,67,multi_year,casual,False,how much did tesla's car deliveries grow from 2018 to 2021?,"Deliveries grew from 245,506 vehicles in 2018 to 936,222 in 2021, almost a fourfold increase.","To calculate Tesla's car deliveries growth from 2018 to 2021:
+
+- In 2018, Tesla delivered 245,506 vehicles. [FY2018 10-K | Item 7]
+- In 2021, Tesla delivered 936,222 vehicles. [FY2021 10-K | Item 7]
+
+Growth = 936,222 - 245,506 = 690,716 additional deliveries.
+
+Therefore, Tesla's car deliveries grew by 690,716 vehicles from 2018 to 2021.",1.0,1.0,4,5,FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 7; FY2018 Item 8; FY2021 Item 8; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7; FY2021 Item 7
